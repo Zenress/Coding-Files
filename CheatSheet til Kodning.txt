@@ -1,0 +1,47 @@
+Emne 1 WPF / Brugergrænseflader
+1. Hvad er en button?
+2. Hvad er en textbox?
+3. Hvad er en label?
+4. Hvad er en combobox?
+5. Hvad er en checkbox?
+6. Hvad er en radiobutton?
+
+Emne 2 Brugergrænseflader / Interaktion
+1. Hvad er en eventhandler?
+2. Hvilket relevante eventhandlers bruges der?
+3. Hvad er et grid?
+4. Hvad er en groupbox?
+5. Hvad er forskellen på et stackpanel og et dockpanel?
+6. Hvad er et datagrid og hvornår bruger jeg det?
+7. Hvad er en listbox og hvornår bruger jeg det?
+
+Emne 3 OOP Object Oriented Programming
+1. Hvad er encapsulation og hvorfor bruger vi det?
+2. Hvad er inheritance og hvorfor bruger vi det?
+3. Hvad betyder modulariseret software architektur? Mvc og Mvvm
+
+Emne 4 Systemudviklingsmetoder
+1. Kan jeg bruge Github og bruge det til programmering?
+2. jeg kan omsætte en kravspecifikation til funktionallitet
+3. Jeg kan læse og skrive UML diagrammer? Herunder Usecases og class diagrammer
+
+Emne 5 Persistente data
+1. Jeg kan oprette en database med modeller og tables udfra et ER(Entity Framework) Diagram?
+2. Jeg kan bruge Foreign og Primary Keys herunder: hvad man bruger dem til?
+3. Hvad er CRUD?
+4. Jeg kan anvende optimale datatyper til håndtering af SQL
+5. Jeg kan anvende en Client / Server software arkitektur
+6. Jeg kan anvende en webservice / API
+7. Jeg ved hvad Json er
+8. Jeg kan håndtere Json fra en webservice (Deserialization)
+9. Jeg kan anvende Normalisation op til 3rd form
+
+Emne 6 QA
+1. Hvad betyder "Try Catch Finally"?
+2. Jeg ved hvad en Exception betyder
+3. Jeg kan sikre kode ved hjælp af Unit Testing
+4. Jeg ved hvad AAA betyder (Indenfor Unit Testing)
+5. Jeg kan overholde best practice
+6. Best practice er? (Hvad kræver det?)
+7. Hvad er CamelCase? Hvad er pascalCase? og hvornår bruges det?
+8. Jeg kan udvise Opgaveloyalitet ift. kravspecifikationen (Kunden ved bedst)
