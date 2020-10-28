@@ -1,0 +1,43 @@
+﻿<Window x:Class="HaveService.KunderInsertPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HaveService"
+        mc:Ignorable="d"
+        Title="KunderInsertPage" Height="423.334" Width="443.2">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Tilføj Kunde" Margin="10,0,-111.6,-2.2">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,89,0,0" TextWrapping="Wrap" Text="Tilføj Kunde" VerticalAlignment="Top" Width="68"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="20,110,250,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Na"/><Run Text="vn"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Center" Margin="20,146,250,0" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="20,182,250,0" TextWrapping="Wrap" Text="Telefonnummer" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="20,221,250,0" TextWrapping="Wrap" Text="Postnummer" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="20,259,250,0" TextWrapping="Wrap" Text="Beskrivelse" VerticalAlignment="Top"/>
+                    <TextBox x:Name="KundeNavn" HorizontalAlignment="Center" Height="23" Margin="0,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="KundeAdresse" HorizontalAlignment="Center" Height="23" Margin="0,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="KundeTelefonNr" HorizontalAlignment="Center" Height="23" Margin="0,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="KundePostNr" HorizontalAlignment="Center" Height="23" Margin="0,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="KundeOpgaveBeskrivelse" HorizontalAlignment="Center" Height="23" Margin="0,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="KundeCreateBtn" Content="Insert" HorizontalAlignment="Center" Margin="0,287,0,0" VerticalAlignment="Top" Width="75" Click="insertBtn_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Opdater Oplysninger" Margin="114.4,0,-202.2,-2.2">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"><Run Text="Opdater "/><Run Text="O"/><Run Text="plysninger"/><Run Text=" "/></TextBlock>
+                    <TextBlock HorizontalAlignment="Center" Margin="20,110,250,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Na"/><Run Text="vn"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Center" Margin="60,146,288.2,0" TextWrapping="Wrap" Text="Telefonnummer" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="68,184,295.2,0" TextWrapping="Wrap" Text="Postnummer" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="73,223,300.2,0" TextWrapping="Wrap" Text="Beskrivelse" VerticalAlignment="Top"/>
+                    <TextBox x:Name="OpdaterNavn" HorizontalAlignment="Center" Height="23" Margin="0,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="OpdaterTelefonNr" HorizontalAlignment="Center" Height="23" Margin="0,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="OpdaterPostNr" HorizontalAlignment="Center" Height="23" Margin="0,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="OpdaterOpgaveBeskrivelse" HorizontalAlignment="Center" Height="23" Margin="0,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="OpdaterBtn" Content="Update" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Width="75" Click="OpdaterBtn_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

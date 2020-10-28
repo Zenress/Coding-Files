@@ -1,0 +1,18 @@
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\bin\Debug\WeatherApp V2.exe.config
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\bin\Debug\WeatherApp V2.exe
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\bin\Debug\WeatherApp V2.pdb
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\WeatherApp V2.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\WeatherApp V2_MarkupCompile.cache
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\WeatherApp V2_MarkupCompile.lref
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\WeatherApp V2.g.resources
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\WeatherApp_V2.Properties.Resources.resources
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\WeatherApp V2.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\WeatherApp V2.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\WeatherApp V2.csproj.CopyComplete
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\WeatherApp V2.exe
+C:\Users\shan0382\source\repos\WeatherApp V2\WeatherApp V2\obj\Debug\WeatherApp V2.pdb

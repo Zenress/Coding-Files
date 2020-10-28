@@ -1,0 +1,15 @@
+﻿<Window x:Class="Exercise_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercise_5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" WindowStyle="None">
+    <Grid>
+        <Button x:Name="CatchMe" Content="Catch Me" HorizontalAlignment="Left" Margin="325,331,0,0" VerticalAlignment="Top" Width="74" Height="27" Click="Button_Click"/>
+        <Label Content="Score: " HorizontalAlignment="Left" Margin="325,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.591,0.054" Height="38" Width="42"/>
+        <Label x:Name="Score" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="27" Margin="372,46,0,0"/>
+
+    </Grid>
+</Window>

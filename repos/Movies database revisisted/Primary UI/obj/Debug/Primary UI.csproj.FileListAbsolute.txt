@@ -1,0 +1,22 @@
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\bin\Debug\Primary UI.exe.config
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\bin\Debug\Primary UI.exe
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\bin\Debug\Primary UI.pdb
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\bin\Debug\EntityFramework.dll
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\bin\Debug\EntityFramework.xml
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary UI.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary UI_Content.g.cs
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary UI_MarkupCompile.cache
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary UI_MarkupCompile.lref
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary UI.g.resources
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary_UI.Properties.Resources.resources
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary UI.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary UI.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary UI.csproj.CopyComplete
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary UI.exe
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\Primary UI.pdb
+C:\Users\shan0382\source\repos\Movies database revisisted\Primary UI\obj\Debug\GeneratedInternalTypeHelper.g.cs

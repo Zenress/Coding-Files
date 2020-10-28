@@ -1,0 +1,12 @@
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\bin\Debug\Code first approach.exe.config
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\bin\Debug\Code first approach.exe
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\bin\Debug\Code first approach.pdb
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\bin\Debug\EntityFramework.dll
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\bin\Debug\EntityFramework.xml
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\obj\Debug\Code first approach.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\obj\Debug\Code first approach.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\obj\Debug\Code first approach.csproj.CopyComplete
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\obj\Debug\Code first approach.exe
+C:\Users\shan0382\source\repos\Code first approach\Code first approach\obj\Debug\Code first approach.pdb

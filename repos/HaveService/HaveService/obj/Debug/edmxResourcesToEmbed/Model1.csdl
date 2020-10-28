@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HaveserviceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Istandsættelse">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Kundeadresse" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Start_Dato" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Slut_Dato" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Pris" Type="Int32" Nullable="false" />
+    <Property Name="Areal_Af_Have" Type="Int32" Nullable="false" />
+    <Property Name="Beskrivelse_af_Opgave" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Kunder" Relationship="Self.FK__Istandsæt__Kunde__5BE2A6F2" FromRole="Istandsættelse" ToRole="Kunder" />
+  </EntityType>
+  <EntityType Name="Kunder">
+    <Key>
+      <PropertyRef Name="Adresse" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Adresse" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TelefonNr" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PostNr" Type="Int32" Nullable="false" />
+    <Property Name="OpgaveType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Istandsættelse" Relationship="Self.FK__Istandsæt__Kunde__5BE2A6F2" FromRole="Kunder" ToRole="Istandsættelse" />
+  </EntityType>
+  <EntityType Name="LejningAfUdstyr">
+    <Key>
+      <PropertyRef Name="Navn" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Navn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Adresse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Bemærkninger" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Istandsæt__Kunde__5BE2A6F2">
+    <End Role="Kunder" Type="Self.Kunder" Multiplicity="1" />
+    <End Role="Istandsættelse" Type="Self.Istandsættelse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kunder">
+        <PropertyRef Name="Adresse" />
+      </Principal>
+      <Dependent Role="Istandsættelse">
+        <PropertyRef Name="Kundeadresse" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HaveserviceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Istandsættelse" EntityType="Self.Istandsættelse" />
+    <EntitySet Name="Kunder" EntityType="Self.Kunder" />
+    <EntitySet Name="LejningAfUdstyr" EntityType="Self.LejningAfUdstyr" />
+    <AssociationSet Name="FK__Istandsæt__Kunde__5BE2A6F2" Association="Self.FK__Istandsæt__Kunde__5BE2A6F2">
+      <End Role="Kunder" EntitySet="Kunder" />
+      <End Role="Istandsættelse" EntitySet="Istandsættelse" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

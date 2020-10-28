@@ -1,0 +1,9 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 20\bin\Debug\Opgave 20.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 20\bin\Debug\Opgave 20.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 20\bin\Debug\Opgave 20.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 20\obj\Debug\Opgave 20.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 20\obj\Debug\Opgave 20.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 20\bin\Debug\Values.txt
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 20\obj\Debug\Opgave 20.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 20\bin\Debug\Boxes.txt
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 20\obj\Debug\Opgave 20.csproj.CoreCompileInputs.cache

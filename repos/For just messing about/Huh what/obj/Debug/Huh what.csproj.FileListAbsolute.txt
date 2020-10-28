@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\For just messing about\Huh what\bin\Debug\Huh what.exe.config
+C:\Users\shan0382\source\repos\For just messing about\Huh what\bin\Debug\Huh what.exe
+C:\Users\shan0382\source\repos\For just messing about\Huh what\bin\Debug\Huh what.pdb
+C:\Users\shan0382\source\repos\For just messing about\Huh what\obj\Debug\Huh what.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\For just messing about\Huh what\obj\Debug\Huh what.exe
+C:\Users\shan0382\source\repos\For just messing about\Huh what\obj\Debug\Huh what.pdb

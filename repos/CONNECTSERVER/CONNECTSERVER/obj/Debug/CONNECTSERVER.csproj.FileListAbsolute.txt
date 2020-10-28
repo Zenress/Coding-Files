@@ -1,0 +1,7 @@
+C:\Users\shan0382\source\repos\CONNECTSERVER\CONNECTSERVER\bin\Debug\CONNECTSERVER.exe.config
+C:\Users\shan0382\source\repos\CONNECTSERVER\CONNECTSERVER\bin\Debug\CONNECTSERVER.exe
+C:\Users\shan0382\source\repos\CONNECTSERVER\CONNECTSERVER\bin\Debug\CONNECTSERVER.pdb
+C:\Users\shan0382\source\repos\CONNECTSERVER\CONNECTSERVER\obj\Debug\CONNECTSERVER.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\CONNECTSERVER\CONNECTSERVER\obj\Debug\CONNECTSERVER.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\CONNECTSERVER\CONNECTSERVER\obj\Debug\CONNECTSERVER.exe
+C:\Users\shan0382\source\repos\CONNECTSERVER\CONNECTSERVER\obj\Debug\CONNECTSERVER.pdb

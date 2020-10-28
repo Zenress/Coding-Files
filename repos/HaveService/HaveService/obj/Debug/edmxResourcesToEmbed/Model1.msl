@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HaveserviceModelStoreContainer" CdmEntityContainer="HaveserviceEntities">
+    <EntitySetMapping Name="Istandsættelse">
+      <EntityTypeMapping TypeName="HaveserviceModel.Istandsættelse">
+        <MappingFragment StoreEntitySet="Istandsættelse">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Kundeadresse" ColumnName="Kundeadresse" />
+          <ScalarProperty Name="Start_Dato" ColumnName="Start Dato" />
+          <ScalarProperty Name="Slut_Dato" ColumnName="Slut Dato" />
+          <ScalarProperty Name="Pris" ColumnName="Pris" />
+          <ScalarProperty Name="Areal_Af_Have" ColumnName="Areal Af Have" />
+          <ScalarProperty Name="Beskrivelse_af_Opgave" ColumnName="Beskrivelse af Opgave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kunder">
+      <EntityTypeMapping TypeName="HaveserviceModel.Kunder">
+        <MappingFragment StoreEntitySet="Kunder">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+          <ScalarProperty Name="TelefonNr" ColumnName="TelefonNr" />
+          <ScalarProperty Name="PostNr" ColumnName="PostNr" />
+          <ScalarProperty Name="OpgaveType" ColumnName="OpgaveType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LejningAfUdstyr">
+      <EntityTypeMapping TypeName="HaveserviceModel.LejningAfUdstyr">
+        <MappingFragment StoreEntitySet="LejningAfUdstyr">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Navn" ColumnName="Navn" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+          <ScalarProperty Name="Bemærkninger" ColumnName="Bemærkninger" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

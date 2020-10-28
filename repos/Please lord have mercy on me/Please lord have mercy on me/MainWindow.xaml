@@ -1,0 +1,42 @@
+﻿<Window x:Class="Please_lord_have_mercy_on_me.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Please_lord_have_mercy_on_me"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="75"/>
+        <DatePicker HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="127" Width="392"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="90,391,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="170,391,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="407,14,0,0" TextWrapping="Wrap" Text="PLEASE GOD HAVE MERCY" VerticalAlignment="Top" Width="161"/>
+        <TextBlock HorizontalAlignment="Left" Margin="407,35,0,0" TextWrapping="Wrap" Text="PLEASE GOD HAVE MERCY" VerticalAlignment="Top" Width="161"/>
+        <TextBlock HorizontalAlignment="Left" Margin="407,56,0,0" TextWrapping="Wrap" Text="PLEASE GOD HAVE MERCY" VerticalAlignment="Top" Width="161"/>
+        <TextBlock HorizontalAlignment="Left" Margin="407,77,0,0" TextWrapping="Wrap" Text="PLEASE GOD HAVE MERCY" VerticalAlignment="Top" Width="161"/>
+        <TextBlock HorizontalAlignment="Left" Margin="407,98,0,0" TextWrapping="Wrap" Text="PLEASE GOD HAVE MERCY" VerticalAlignment="Top" Width="161"/>
+        <TextBlock HorizontalAlignment="Left" Margin="407,119,0,0" TextWrapping="Wrap" Text="PLEASE GOD HAVE MERCY" VerticalAlignment="Top" Width="161"/>
+        <Image x:Name="Halelluja" HorizontalAlignment="Left" Height="192" Margin="-21,51,0,0" VerticalAlignment="Top" Width="428" Source="C:\Users\shan0382\Desktop\YouTube Template #2\blood_splatter_transparency_by_sagacious-d3h1yw6.png"/>
+        <Image HorizontalAlignment="Left" Height="192" Margin="324,170,0,0" VerticalAlignment="Top" Width="428" Source="C:\Users\shan0382\Desktop\YouTube Template #2\blood_splatter_transparency_by_sagacious-d3h1yw6.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-19.734"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="192" Margin="517,14,-151.4,0" VerticalAlignment="Top" Width="428" Source="C:\Users\shan0382\Desktop\YouTube Template #2\blood_splatter_transparency_by_sagacious-d3h1yw6.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.541"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Window>

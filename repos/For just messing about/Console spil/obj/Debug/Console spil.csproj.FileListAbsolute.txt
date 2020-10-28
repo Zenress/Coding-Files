@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\For just messing about\Console spil\bin\Debug\Console spil.exe.config
+C:\Users\shan0382\source\repos\For just messing about\Console spil\bin\Debug\Console spil.exe
+C:\Users\shan0382\source\repos\For just messing about\Console spil\bin\Debug\Console spil.pdb
+C:\Users\shan0382\source\repos\For just messing about\Console spil\obj\Debug\Console spil.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\For just messing about\Console spil\obj\Debug\Console spil.exe
+C:\Users\shan0382\source\repos\For just messing about\Console spil\obj\Debug\Console spil.pdb

@@ -1,0 +1,15 @@
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\bin\Debug\WPFGaming.exe.config
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\bin\Debug\WPFGaming.exe
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\bin\Debug\WPFGaming.pdb
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\WPFGaming.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\WPFGaming_MarkupCompile.cache
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\WPFGaming_MarkupCompile.lref
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\WPFGaming.g.resources
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\WPFGaming.Properties.Resources.resources
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\WPFGaming.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\WPFGaming.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\WPFGaming.exe
+C:\Users\shan0382\source\repos\WPFGaming\WPFGaming\obj\Debug\WPFGaming.pdb

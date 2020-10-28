@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 18\bin\Debug\Opgave 18.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 18\bin\Debug\Opgave 18.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 18\bin\Debug\Opgave 18.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 18\obj\Debug\Opgave 18.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 18\obj\Debug\Opgave 18.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 18\obj\Debug\Opgave 18.pdb

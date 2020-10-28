@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 016\bin\Debug\Opgave 016.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 016\bin\Debug\Opgave 016.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 016\bin\Debug\Opgave 016.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 016\obj\Debug\Opgave 016.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 016\obj\Debug\Opgave 016.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 016\bin\Debug\TextFile1.txt

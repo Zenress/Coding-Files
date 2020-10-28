@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\HELP ME MORE\bin\Debug\HELP ME MORE.exe.config
+C:\Users\shan0382\source\repos\HELP ME MORE\bin\Debug\HELP ME MORE.exe
+C:\Users\shan0382\source\repos\HELP ME MORE\bin\Debug\HELP ME MORE.pdb
+C:\Users\shan0382\source\repos\HELP ME MORE\obj\Debug\HELP ME MORE.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\HELP ME MORE\obj\Debug\HELP ME MORE.exe
+C:\Users\shan0382\source\repos\HELP ME MORE\obj\Debug\HELP ME MORE.pdb

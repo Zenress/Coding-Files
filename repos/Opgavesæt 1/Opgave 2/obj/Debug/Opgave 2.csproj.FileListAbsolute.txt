@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 2\bin\Debug\Opgave 2.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 2\bin\Debug\Opgave 2.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 2\bin\Debug\Opgave 2.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 2\obj\Debug\Opgave 2.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 2\obj\Debug\Opgave 2.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 2\obj\Debug\Opgave 2.csprojAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\Aritmetik\bin\Debug\Aritmetik.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\Aritmetik\bin\Debug\Aritmetik.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Aritmetik\bin\Debug\Aritmetik.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Aritmetik\obj\Debug\Aritmetik.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Aritmetik\obj\Debug\Aritmetik.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Aritmetik\obj\Debug\Aritmetik.csprojAssemblyReference.cache

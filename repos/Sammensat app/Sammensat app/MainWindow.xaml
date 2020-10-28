@@ -1,0 +1,22 @@
+﻿<Window x:Class="Sammensat_app.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sammensat_app"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="tamaButtonPlay" Content="Play" FontSize="30" HorizontalAlignment="Left" Margin="312,42,0,0" VerticalAlignment="Top" Width="168" Height="64" Click="tamaButtonPlay_Click"/>
+        <Button x:Name="tamaButtonFeed" Content="Feed" FontSize="30" HorizontalAlignment="Left" Margin="312,174,0,0" VerticalAlignment="Top" Width="168" Height="64" Click="tamaButtonFeed_Click"/>
+        <Button x:Name="tamaButtonWater" Content="Refill Water" FontSize="30" HorizontalAlignment="Left" Margin="312,306,0,0" VerticalAlignment="Top" Width="168" Height="64" Click="tamaButtonWater_Click"/>
+
+        <Label x:Name="tamaStatusMessage" Content="Hello." FontSize="20" HorizontalAlignment="Left" Margin="501,174,0,0" VerticalAlignment="Top" Height="64" Width="267"/>
+        <Label x:Name="tamaHappinessStatus" Content="Happiness" HorizontalAlignment="Left" Margin="53,68,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="tamaHungerStatus" Content="Hunger" HorizontalAlignment="Left" Margin="53,138,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="tamaThirstStatus" Content="Thirst" HorizontalAlignment="Left" Margin="53,220,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="tamaMessage" Content="Label" HorizontalAlignment="Left" Margin="505,106,0,0" VerticalAlignment="Top" Width="263" Height="58"/>
+        <Label x:Name="tamaHealth" Content="Health" HorizontalAlignment="Left" Margin="53,288,0,0" VerticalAlignment="Top" Width="170"/>
+
+    </Grid>
+</Window>

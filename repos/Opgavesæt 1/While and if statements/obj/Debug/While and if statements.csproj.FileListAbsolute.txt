@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\While and if statements\bin\Debug\While and if statements.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\While and if statements\bin\Debug\While and if statements.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\While and if statements\bin\Debug\While and if statements.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\While and if statements\obj\Debug\While and if statements.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\While and if statements\obj\Debug\While and if statements.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\While and if statements\obj\Debug\While and if statements.pdb

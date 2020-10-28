@@ -1,0 +1,15 @@
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\Exercise 11.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\Exercise 11_MarkupCompile.cache
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\Exercise 11_MarkupCompile.lref
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\bin\Debug\Exercise 11.exe.config
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\bin\Debug\Exercise 11.exe
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\bin\Debug\Exercise 11.pdb
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\Exercise 11.g.resources
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\Exercise_11.Properties.Resources.resources
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\Exercise 11.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\Exercise 11.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\Exercise 11.exe
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 11\obj\Debug\Exercise 11.pdb

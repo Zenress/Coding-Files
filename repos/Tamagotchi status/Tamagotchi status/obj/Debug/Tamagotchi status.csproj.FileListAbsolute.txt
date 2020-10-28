@@ -1,0 +1,14 @@
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\bin\Debug\Tamagotchi status.exe.config
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\bin\Debug\Tamagotchi status.exe
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\bin\Debug\Tamagotchi status.pdb
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\Tamagotchi status.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\Tamagotchi status_MarkupCompile.cache
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\Tamagotchi status_MarkupCompile.lref
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\Tamagotchi status.g.resources
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\Tamagotchi_status.Properties.Resources.resources
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\Tamagotchi status.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\Tamagotchi status.exe
+C:\Users\shan0382\source\repos\Tamagotchi status\Tamagotchi status\obj\Debug\Tamagotchi status.pdb

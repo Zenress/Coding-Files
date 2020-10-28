@@ -1,0 +1,7 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\FornavnEfternavn\bin\Debug\FornavnEfternavn.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\FornavnEfternavn\bin\Debug\FornavnEfternavn.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\FornavnEfternavn\bin\Debug\FornavnEfternavn.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\FornavnEfternavn\obj\Debug\FornavnEfternavn.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\FornavnEfternavn\obj\Debug\FornavnEfternavn.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\FornavnEfternavn\obj\Debug\FornavnEfternavn.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\FornavnEfternavn\obj\Debug\FornavnEfternavn.pdb

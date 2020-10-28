@@ -1,0 +1,5 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 09\bin\Debug\Opgave 09.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 09\bin\Debug\Opgave 09.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 09\bin\Debug\Opgave 09.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 09\obj\Debug\Opgave 09.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 09\obj\Debug\Opgave 09.pdb

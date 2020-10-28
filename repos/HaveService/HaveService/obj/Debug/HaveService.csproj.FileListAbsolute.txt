@@ -1,0 +1,28 @@
+C:\Users\shan0382\source\repos\HaveService\HaveService\bin\Debug\HaveService.exe.config
+C:\Users\shan0382\source\repos\HaveService\HaveService\bin\Debug\HaveService.exe
+C:\Users\shan0382\source\repos\HaveService\HaveService\bin\Debug\HaveService.pdb
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService_MarkupCompile.cache
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService_MarkupCompile.lref
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService.g.resources
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService.Properties.Resources.resources
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService.exe
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService.pdb
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\IstandsættelseInsertPage.g.cs
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\KunderInsertPage.g.cs
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\Leje af udstyrInsertPage.g.cs
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\IstandsættelseInsertPage.baml
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\KunderInsertPage.baml
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\Leje af udstyrInsertPage.baml
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService_Content.g.cs
+C:\Users\shan0382\source\repos\HaveService\HaveService\bin\Debug\EntityFramework.dll
+C:\Users\shan0382\source\repos\HaveService\HaveService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shan0382\source\repos\HaveService\HaveService\bin\Debug\EntityFramework.xml
+C:\Users\shan0382\source\repos\HaveService\HaveService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shan0382\source\repos\HaveService\HaveService\obj\Debug\HaveService.csproj.CopyComplete

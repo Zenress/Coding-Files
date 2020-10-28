@@ -1,0 +1,11 @@
+C:\Users\shan0382\source\repos\HELP ME\bin\Debug\netcoreapp3.0\HELP ME.exe
+C:\Users\shan0382\source\repos\HELP ME\bin\Debug\netcoreapp3.0\HELP ME.deps.json
+C:\Users\shan0382\source\repos\HELP ME\bin\Debug\netcoreapp3.0\HELP ME.runtimeconfig.json
+C:\Users\shan0382\source\repos\HELP ME\bin\Debug\netcoreapp3.0\HELP ME.runtimeconfig.dev.json
+C:\Users\shan0382\source\repos\HELP ME\bin\Debug\netcoreapp3.0\HELP ME.dll
+C:\Users\shan0382\source\repos\HELP ME\bin\Debug\netcoreapp3.0\HELP ME.pdb
+C:\Users\shan0382\source\repos\HELP ME\obj\Debug\netcoreapp3.0\HELP ME.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\HELP ME\obj\Debug\netcoreapp3.0\HELP ME.AssemblyInfoInputs.cache
+C:\Users\shan0382\source\repos\HELP ME\obj\Debug\netcoreapp3.0\HELP ME.AssemblyInfo.cs
+C:\Users\shan0382\source\repos\HELP ME\obj\Debug\netcoreapp3.0\HELP ME.dll
+C:\Users\shan0382\source\repos\HELP ME\obj\Debug\netcoreapp3.0\HELP ME.pdb

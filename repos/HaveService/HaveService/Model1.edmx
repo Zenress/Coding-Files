@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HaveserviceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Istandsættelse">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kundeadresse" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="Start Dato" Type="datetime" Nullable="false" />
+          <Property Name="Slut Dato" Type="datetime" Nullable="false" />
+          <Property Name="Pris" Type="int" Nullable="false" />
+          <Property Name="Areal Af Have" Type="int" Nullable="false" />
+          <Property Name="Beskrivelse af Opgave" Type="varchar" MaxLength="500" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Kunder">
+          <Key>
+            <PropertyRef Name="Adresse" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Adresse" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="TelefonNr" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PostNr" Type="int" Nullable="false" />
+          <Property Name="OpgaveType" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LejningAfUdstyr">
+          <Key>
+            <PropertyRef Name="Navn" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Navn" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Adresse" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Bemærkninger" Type="varchar" MaxLength="500" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Istandsæt__Kunde__5BE2A6F2">
+          <End Role="Kunder" Type="Self.Kunder" Multiplicity="1" />
+          <End Role="Istandsættelse" Type="Self.Istandsættelse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kunder">
+              <PropertyRef Name="Adresse" />
+            </Principal>
+            <Dependent Role="Istandsættelse">
+              <PropertyRef Name="Kundeadresse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HaveserviceModelStoreContainer">
+          <EntitySet Name="Istandsættelse" EntityType="Self.Istandsættelse" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kunder" EntityType="Self.Kunder" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LejningAfUdstyr" EntityType="Self.LejningAfUdstyr" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Istandsæt__Kunde__5BE2A6F2" Association="Self.FK__Istandsæt__Kunde__5BE2A6F2">
+            <End Role="Kunder" EntitySet="Kunder" />
+            <End Role="Istandsættelse" EntitySet="Istandsættelse" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HaveserviceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Istandsættelse">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kundeadresse" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Start_Dato" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Slut_Dato" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Pris" Type="Int32" Nullable="false" />
+          <Property Name="Areal_Af_Have" Type="Int32" Nullable="false" />
+          <Property Name="Beskrivelse_af_Opgave" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Kunder" Relationship="Self.FK__Istandsæt__Kunde__5BE2A6F2" FromRole="Istandsættelse" ToRole="Kunder" />
+        </EntityType>
+        <EntityType Name="Kunder">
+          <Key>
+            <PropertyRef Name="Adresse" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Adresse" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TelefonNr" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PostNr" Type="Int32" Nullable="false" />
+          <Property Name="OpgaveType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Istandsættelse" Relationship="Self.FK__Istandsæt__Kunde__5BE2A6F2" FromRole="Kunder" ToRole="Istandsættelse" />
+        </EntityType>
+        <EntityType Name="LejningAfUdstyr">
+          <Key>
+            <PropertyRef Name="Navn" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Navn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Adresse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Bemærkninger" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Istandsæt__Kunde__5BE2A6F2">
+          <End Role="Kunder" Type="Self.Kunder" Multiplicity="1" />
+          <End Role="Istandsættelse" Type="Self.Istandsættelse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kunder">
+              <PropertyRef Name="Adresse" />
+            </Principal>
+            <Dependent Role="Istandsættelse">
+              <PropertyRef Name="Kundeadresse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HaveserviceEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Istandsættelse" EntityType="Self.Istandsættelse" />
+          <EntitySet Name="Kunder" EntityType="Self.Kunder" />
+          <EntitySet Name="LejningAfUdstyr" EntityType="Self.LejningAfUdstyr" />
+          <AssociationSet Name="FK__Istandsæt__Kunde__5BE2A6F2" Association="Self.FK__Istandsæt__Kunde__5BE2A6F2">
+            <End Role="Kunder" EntitySet="Kunder" />
+            <End Role="Istandsættelse" EntitySet="Istandsættelse" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HaveserviceModelStoreContainer" CdmEntityContainer="HaveserviceEntities">
+          <EntitySetMapping Name="Istandsættelse">
+            <EntityTypeMapping TypeName="HaveserviceModel.Istandsættelse">
+              <MappingFragment StoreEntitySet="Istandsættelse">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Kundeadresse" ColumnName="Kundeadresse" />
+                <ScalarProperty Name="Start_Dato" ColumnName="Start Dato" />
+                <ScalarProperty Name="Slut_Dato" ColumnName="Slut Dato" />
+                <ScalarProperty Name="Pris" ColumnName="Pris" />
+                <ScalarProperty Name="Areal_Af_Have" ColumnName="Areal Af Have" />
+                <ScalarProperty Name="Beskrivelse_af_Opgave" ColumnName="Beskrivelse af Opgave" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kunder">
+            <EntityTypeMapping TypeName="HaveserviceModel.Kunder">
+              <MappingFragment StoreEntitySet="Kunder">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+                <ScalarProperty Name="TelefonNr" ColumnName="TelefonNr" />
+                <ScalarProperty Name="PostNr" ColumnName="PostNr" />
+                <ScalarProperty Name="OpgaveType" ColumnName="OpgaveType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LejningAfUdstyr">
+            <EntityTypeMapping TypeName="HaveserviceModel.LejningAfUdstyr">
+              <MappingFragment StoreEntitySet="LejningAfUdstyr">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Navn" ColumnName="Navn" />
+                <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+                <ScalarProperty Name="Bemærkninger" ColumnName="Bemærkninger" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

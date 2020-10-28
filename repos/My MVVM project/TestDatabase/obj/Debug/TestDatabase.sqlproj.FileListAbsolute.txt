@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\My MVVM project\TestDatabase\bin\Debug\TestDatabase.dacpac
+C:\Users\shan0382\source\repos\My MVVM project\TestDatabase\bin\Debug\TestDatabase.dll
+C:\Users\shan0382\source\repos\My MVVM project\TestDatabase\bin\Debug\TestDatabase.pdb
+C:\Users\shan0382\source\repos\My MVVM project\TestDatabase\obj\Debug\TestDatabase.sqlprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\My MVVM project\TestDatabase\obj\Debug\TestDatabase.dll
+C:\Users\shan0382\source\repos\My MVVM project\TestDatabase\obj\Debug\TestDatabase.pdb

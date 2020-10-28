@@ -1,0 +1,15 @@
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\Epic Game.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\Epic Game_MarkupCompile.cache
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\Epic Game_MarkupCompile.lref
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\bin\Debug\Epic Game.exe.config
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\bin\Debug\Epic Game.exe
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\bin\Debug\Epic Game.pdb
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\Epic Game.g.resources
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\Epic_Game.Properties.Resources.resources
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\Epic Game.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\Epic Game.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\Epic Game.exe
+C:\Users\shan0382\source\repos\Epic Game\Epic Game\obj\Debug\Epic Game.pdb

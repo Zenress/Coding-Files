@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\For just messing about\For just messing about\bin\Debug\For just messing about.exe.config
+C:\Users\shan0382\source\repos\For just messing about\For just messing about\bin\Debug\For just messing about.exe
+C:\Users\shan0382\source\repos\For just messing about\For just messing about\bin\Debug\For just messing about.pdb
+C:\Users\shan0382\source\repos\For just messing about\For just messing about\obj\Debug\For just messing about.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\For just messing about\For just messing about\obj\Debug\For just messing about.exe
+C:\Users\shan0382\source\repos\For just messing about\For just messing about\obj\Debug\For just messing about.pdb

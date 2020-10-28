@@ -1,0 +1,14 @@
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\bin\Debug\Sammensat app.exe.config
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\bin\Debug\Sammensat app.exe
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\bin\Debug\Sammensat app.pdb
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\Sammensat app.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\Sammensat app_MarkupCompile.cache
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\Sammensat app_MarkupCompile.lref
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\Sammensat app.g.resources
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\Sammensat_app.Properties.Resources.resources
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\Sammensat app.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\Sammensat app.exe
+C:\Users\shan0382\source\repos\Sammensat app\Sammensat app\obj\Debug\Sammensat app.pdb

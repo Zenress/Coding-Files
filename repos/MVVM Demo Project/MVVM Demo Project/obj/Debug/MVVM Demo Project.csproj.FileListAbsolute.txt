@@ -1,0 +1,18 @@
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MVVM Demo Project.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\Views\StudentView.g.cs
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MVVM Demo Project_MarkupCompile.cache
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MVVM Demo Project_MarkupCompile.lref
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\bin\Debug\MVVM Demo Project.exe.config
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\bin\Debug\MVVM Demo Project.exe
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\bin\Debug\MVVM Demo Project.pdb
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\Views\StudentView.baml
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MVVM Demo Project.g.resources
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MVVM_Demo_Project.Properties.Resources.resources
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MVVM Demo Project.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MVVM Demo Project.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MVVM Demo Project.exe
+C:\Users\shan0382\source\repos\MVVM Demo Project\MVVM Demo Project\obj\Debug\MVVM Demo Project.pdb

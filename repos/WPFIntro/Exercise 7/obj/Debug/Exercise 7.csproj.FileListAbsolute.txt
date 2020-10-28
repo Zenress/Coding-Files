@@ -1,0 +1,14 @@
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\bin\Debug\Exercise 7.exe.config
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\bin\Debug\Exercise 7.exe
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\bin\Debug\Exercise 7.pdb
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\Exercise 7_MarkupCompile.cache
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\Exercise 7_MarkupCompile.lref
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\Exercise 7.g.resources
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\Exercise_7.Properties.Resources.resources
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\Exercise 7.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\Exercise 7.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\Exercise 7.exe
+C:\Users\shan0382\source\repos\WPFIntro\Exercise 7\obj\Debug\Exercise 7.pdb

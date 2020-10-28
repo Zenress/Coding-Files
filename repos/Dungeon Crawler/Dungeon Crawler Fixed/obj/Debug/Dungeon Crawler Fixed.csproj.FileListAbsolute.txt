@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\Dungeon Crawler\Dungeon Crawler Fixed\bin\Debug\Dungeon Crawler Fixed.exe.config
+C:\Users\shan0382\source\repos\Dungeon Crawler\Dungeon Crawler Fixed\bin\Debug\Dungeon Crawler Fixed.exe
+C:\Users\shan0382\source\repos\Dungeon Crawler\Dungeon Crawler Fixed\bin\Debug\Dungeon Crawler Fixed.pdb
+C:\Users\shan0382\source\repos\Dungeon Crawler\Dungeon Crawler Fixed\obj\Debug\Dungeon Crawler Fixed.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Dungeon Crawler\Dungeon Crawler Fixed\obj\Debug\Dungeon Crawler Fixed.exe
+C:\Users\shan0382\source\repos\Dungeon Crawler\Dungeon Crawler Fixed\obj\Debug\Dungeon Crawler Fixed.pdb

@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 15 Time\bin\Debug\Opgave 15 Time.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 15 Time\bin\Debug\Opgave 15 Time.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 15 Time\bin\Debug\Opgave 15 Time.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 15 Time\obj\Debug\Opgave 15 Time.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 15 Time\obj\Debug\Opgave 15 Time.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 15 Time\obj\Debug\Opgave 15 Time.pdb

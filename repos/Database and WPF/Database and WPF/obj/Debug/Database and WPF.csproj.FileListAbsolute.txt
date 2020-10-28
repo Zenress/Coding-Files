@@ -1,0 +1,26 @@
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\bin\Debug\Database and WPF.exe
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\bin\Debug\Database and WPF.exe.config
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\bin\Debug\EntityFramework.dll
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\bin\Debug\EntityFramework.xml
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database and WPF.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database and WPF_Content.g.cs
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database and WPF_MarkupCompile.cache
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database and WPF_MarkupCompile.lref
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database and WPF.g.resources
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database_and_WPF.Properties.Resources.resources
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database and WPF.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database and WPF.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database and WPF.csproj.CopyComplete
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database and WPF.exe
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Database and WPF.pdb
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\bin\Debug\Database and WPF.pdb
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Views\MainWindow.g.cs
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Views\InsertPage.g.cs
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Views\Window1.g.cs
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Views\App.g.cs
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Views\InsertPage.baml
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Views\MainWindow.baml
+C:\Users\shan0382\source\repos\Database and WPF\Database and WPF\obj\Debug\Views\Window1.baml

@@ -1,0 +1,17 @@
+﻿<Window x:Class="Exercise_11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercise_11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!-- Button for the next picture and button for going 1 picture back -->
+        <Button Content="Next" HorizontalAlignment="Left" Margin="563,369,0,0" VerticalAlignment="Top" Width="75" Height="41" Click="Button_Click"/>
+        <!-- Image element containing the image -->
+        <Image x:Name="myPicture" HorizontalAlignment="Left" Height="335" Margin="76,10,0,0" VerticalAlignment="Top" Width="632"/>
+        <Button x:Name="backBtn" Content="Back" HorizontalAlignment="Left" Margin="212,369,0,0" VerticalAlignment="Top" Width="75" Height="41" Click="backBtn_Click"/>
+
+    </Grid>
+</Window>

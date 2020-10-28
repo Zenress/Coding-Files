@@ -1,0 +1,14 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\bin\Debug\Slå med flere terninger.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\bin\Debug\Slå med flere terninger.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\bin\Debug\Slå med flere terninger.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\Slå med flere terninger.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\Slå med flere terninger_MarkupCompile.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\Slå med flere terninger_MarkupCompile.lref
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\Slå med flere terninger.g.resources
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\Slå_med_flere_terninger.Properties.Resources.resources
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\Slå med flere terninger.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\Slå med flere terninger.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Slå med flere terninger\obj\Debug\Slå med flere terninger.pdb

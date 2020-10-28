@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\Morris the miner\Morris the miner\obj\Debug\Morris the miner.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Morris the miner\Morris the miner\bin\Debug\Morris the miner.exe.config
+C:\Users\shan0382\source\repos\Morris the miner\Morris the miner\bin\Debug\Morris the miner.exe
+C:\Users\shan0382\source\repos\Morris the miner\Morris the miner\bin\Debug\Morris the miner.pdb
+C:\Users\shan0382\source\repos\Morris the miner\Morris the miner\obj\Debug\Morris the miner.exe
+C:\Users\shan0382\source\repos\Morris the miner\Morris the miner\obj\Debug\Morris the miner.pdb

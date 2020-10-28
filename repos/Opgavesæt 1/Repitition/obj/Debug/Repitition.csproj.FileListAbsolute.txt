@@ -1,0 +1,14 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\bin\Debug\Repitition.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\bin\Debug\Repitition.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\bin\Debug\Repitition.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\Repitition.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\Repitition_MarkupCompile.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\Repitition_MarkupCompile.lref
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\Repitition.g.resources
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\Repitition.Properties.Resources.resources
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\Repitition.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\Repitition.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Repitition\obj\Debug\Repitition.pdb

@@ -1,0 +1,7 @@
+C:\Users\shan0382\source\repos\Opgavesæt\Opgavesæt\bin\Debug\Opgavesæt.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt\Opgavesæt\bin\Debug\Opgavesæt.exe
+C:\Users\shan0382\source\repos\Opgavesæt\Opgavesæt\bin\Debug\Opgavesæt.pdb
+C:\Users\shan0382\source\repos\Opgavesæt\Opgavesæt\obj\Debug\Opgavesæt.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Opgavesæt\Opgavesæt\obj\Debug\Opgavesæt.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\Opgavesæt\Opgavesæt\obj\Debug\Opgavesæt.exe
+C:\Users\shan0382\source\repos\Opgavesæt\Opgavesæt\obj\Debug\Opgavesæt.pdb

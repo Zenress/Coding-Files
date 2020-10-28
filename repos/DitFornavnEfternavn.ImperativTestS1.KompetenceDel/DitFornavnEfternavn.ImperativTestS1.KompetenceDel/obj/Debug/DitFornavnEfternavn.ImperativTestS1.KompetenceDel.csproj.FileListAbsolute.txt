@@ -1,0 +1,6 @@
+C:\Users\shan0382\source\repos\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\bin\Debug\DitFornavnEfternavn.ImperativTestS1.KompetenceDel.exe.config
+C:\Users\shan0382\source\repos\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\bin\Debug\DitFornavnEfternavn.ImperativTestS1.KompetenceDel.exe
+C:\Users\shan0382\source\repos\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\bin\Debug\DitFornavnEfternavn.ImperativTestS1.KompetenceDel.pdb
+C:\Users\shan0382\source\repos\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\obj\Debug\DitFornavnEfternavn.ImperativTestS1.KompetenceDel.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\obj\Debug\DitFornavnEfternavn.ImperativTestS1.KompetenceDel.exe
+C:\Users\shan0382\source\repos\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\DitFornavnEfternavn.ImperativTestS1.KompetenceDel\obj\Debug\DitFornavnEfternavn.ImperativTestS1.KompetenceDel.pdb

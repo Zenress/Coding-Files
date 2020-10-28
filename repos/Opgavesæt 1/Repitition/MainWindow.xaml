@@ -1,0 +1,26 @@
+﻿<Window x:Class="Repitition.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Repitition"
+        mc:Ignorable="d"
+        Title="" Height="450" Width="800" x:Name="windows">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="642*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Ændrer størrelsen på vinduet" HorizontalAlignment="Left" Margin="64,66,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Ændr farven på baggrunden" HorizontalAlignment="Left" Margin="64,108,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Ændr titlen på vinduet" HorizontalAlignment="Left" Margin="64,148,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="112.847,72,0,0" VerticalAlignment="Top" Width="47" Click="Button_Click" Grid.Column="1"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="179.847,72,0,0" VerticalAlignment="Top" Width="53" Click="Button_Click_1" Grid.Column="1"/>
+        <TextBox x:Name="Size2" HorizontalAlignment="Left" Height="23" Margin="414.847,72,0,0" TextWrapping="Wrap" Text="400" VerticalAlignment="Top" Width="64" TextChanged="TextBox_TextChanged" Grid.Column="1"/>
+        <ComboBox x:Name="boxen" HorizontalAlignment="Left" Margin="112.847,111,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" Grid.Column="1"/>
+        <TextBox x:Name="windowtitle" HorizontalAlignment="Left" Height="23" Margin="112.847,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="height" Content="" HorizontalAlignment="Left" Margin="314.847,214,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="width" Content="" HorizontalAlignment="Left" Margin="314.847,255,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+
+    </Grid>
+</Window>

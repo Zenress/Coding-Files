@@ -1,0 +1,9 @@
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 17\bin\Debug\Opgave 17.exe.config
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 17\bin\Debug\Opgave 17.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 17\bin\Debug\Opgave 17.pdb
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 17\bin\Debug\CarHandler.dll
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 17\bin\Debug\CarHandler.xml
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 17\obj\Debug\Opgave 17.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 17\obj\Debug\Opgave 17.csproj.CopyComplete
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 17\obj\Debug\Opgave 17.exe
+C:\Users\shan0382\source\repos\Opgavesæt 1\Opgave 17\obj\Debug\Opgave 17.pdb

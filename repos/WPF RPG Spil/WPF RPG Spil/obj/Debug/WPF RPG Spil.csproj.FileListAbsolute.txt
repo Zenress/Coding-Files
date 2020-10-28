@@ -1,0 +1,17 @@
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\bin\Debug\WPF RPG Spil.exe.config
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\bin\Debug\WPF RPG Spil.exe
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\bin\Debug\WPF RPG Spil.pdb
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\WPF RPG Spil.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\MainWindow.g.cs
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\WPF RPG Spil_MarkupCompile.cache
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\WPF RPG Spil_MarkupCompile.lref
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\MainWindow.baml
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\WPF RPG Spil.g.resources
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\WPF_RPG_Spil.Properties.Resources.resources
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\WPF RPG Spil.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\WPF RPG Spil.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\WPF RPG Spil.exe
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\WPF RPG Spil.pdb
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\Window1.g.cs
+C:\Users\shan0382\source\repos\WPF RPG Spil\WPF RPG Spil\obj\Debug\Window1.baml
