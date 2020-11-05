@@ -1,0 +1,29 @@
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\bin\Debug\EsportDanmark PEO.exe.config
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\bin\Debug\EsportDanmark PEO.exe
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\bin\Debug\EsportDanmark PEO.pdb
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\bin\Debug\EntityFramework.dll
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\bin\Debug\EntityFramework.xml
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\EmployeeData.g.cs
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\MainWindow.g.cs
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\PlayerData.g.cs
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\SponsorData.g.cs
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\TournamentData.g.cs
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO_Content.g.cs
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO_MarkupCompile.cache
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO_MarkupCompile.lref
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\EmployeeData.baml
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\MainWindow.baml
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\PlayerData.baml
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\SponsorData.baml
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\TournamentData.baml
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO.g.resources
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark_PEO.Properties.Resources.resources
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO.csproj.GenerateResource.cache
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO.csproj.CopyComplete
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO.exe
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO.pdb

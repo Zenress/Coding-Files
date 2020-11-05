@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EsportDanmarkModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="TlfNr" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Pay" Type="money" Nullable="false" />
+    <Property Name="JobType" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="JudgeLvl" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Players">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="SummonerName" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Rank" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="TlfNr" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="TournamentType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TournamentId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sponsorer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="CompanySector" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="PlayerId" Type="int" Nullable="false" />
+    <Property Name="SponsorAmount" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tournament">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TournamentName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="PlayerId" Type="int" Nullable="false" />
+    <Property Name="JudgeId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Players__Tournam__2D27B809">
+    <End Role="Tournament" Type="Self.Tournament" Multiplicity="1" />
+    <End Role="Players" Type="Self.Players" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tournament">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Players">
+        <PropertyRef Name="TournamentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sponsorer__Playe__2E1BDC42">
+    <End Role="Players" Type="Self.Players" Multiplicity="1" />
+    <End Role="Sponsorer" Type="Self.Sponsorer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Players">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sponsorer">
+        <PropertyRef Name="PlayerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tournamen__Judge__300424B4">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Tournament" Type="Self.Tournament" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tournament">
+        <PropertyRef Name="JudgeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tournamen__Playe__2F10007B">
+    <End Role="Players" Type="Self.Players" Multiplicity="1" />
+    <End Role="Tournament" Type="Self.Tournament" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Players">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tournament">
+        <PropertyRef Name="PlayerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EsportDanmarkModelStoreContainer">
+    <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Players" EntityType="Self.Players" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sponsorer" EntityType="Self.Sponsorer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tournament" EntityType="Self.Tournament" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Players__Tournam__2D27B809" Association="Self.FK__Players__Tournam__2D27B809">
+      <End Role="Tournament" EntitySet="Tournament" />
+      <End Role="Players" EntitySet="Players" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sponsorer__Playe__2E1BDC42" Association="Self.FK__Sponsorer__Playe__2E1BDC42">
+      <End Role="Players" EntitySet="Players" />
+      <End Role="Sponsorer" EntitySet="Sponsorer" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tournamen__Judge__300424B4" Association="Self.FK__Tournamen__Judge__300424B4">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Tournament" EntitySet="Tournament" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tournamen__Playe__2F10007B" Association="Self.FK__Tournamen__Playe__2F10007B">
+      <End Role="Players" EntitySet="Players" />
+      <End Role="Tournament" EntitySet="Tournament" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

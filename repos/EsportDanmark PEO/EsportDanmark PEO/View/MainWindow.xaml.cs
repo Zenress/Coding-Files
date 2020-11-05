@@ -27,5 +27,25 @@ namespace EsportDanmark_PEO
             InitializeComponent();
             viewModel = new MainWindowViewModel(this);
         }
+
+        private void PlayerDataBtn_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.OpenPlayerDataBtn();
+        }
+
+        private void SponsorDataBtn_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.OpenSponsorDataBtn();
+        }
+
+        private void TournamentDataBtn_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.OpenTournamentDataBtn();
+        }
+
+        private void EmployeeDataBtn_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.OpenEmployeesDataBtn();
+        }
     }
 }

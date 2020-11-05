@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EsportDanmarkModelStoreContainer" CdmEntityContainer="EsportDanmarkEntities">
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="EsportDanmarkModel.Employees">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TlfNr" ColumnName="TlfNr" />
+          <ScalarProperty Name="Pay" ColumnName="Pay" />
+          <ScalarProperty Name="JobType" ColumnName="JobType" />
+          <ScalarProperty Name="JudgeLvl" ColumnName="JudgeLvl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Players">
+      <EntityTypeMapping TypeName="EsportDanmarkModel.Players">
+        <MappingFragment StoreEntitySet="Players">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SummonerName" ColumnName="SummonerName" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="TlfNr" ColumnName="TlfNr" />
+          <ScalarProperty Name="TournamentType" ColumnName="TournamentType" />
+          <ScalarProperty Name="TournamentId" ColumnName="TournamentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sponsorer">
+      <EntityTypeMapping TypeName="EsportDanmarkModel.Sponsorer">
+        <MappingFragment StoreEntitySet="Sponsorer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanySector" ColumnName="CompanySector" />
+          <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+          <ScalarProperty Name="SponsorAmount" ColumnName="SponsorAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tournament">
+      <EntityTypeMapping TypeName="EsportDanmarkModel.Tournament">
+        <MappingFragment StoreEntitySet="Tournament">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TournamentName" ColumnName="TournamentName" />
+          <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+          <ScalarProperty Name="JudgeId" ColumnName="JudgeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
