@@ -1,34 +1,56 @@
 Emne 1 WPF / Brugergrænseflader
-1. Hvad er en button?
+1. Hvad er en button? 
+- En button er en knap som har en click eventhandler tilknyttet, knappen kan have runde kanter, skarpe kanter og har generelt ligeså mange customization options som andre elementer
 2. Hvad er en textbox?
-3. Hvad er en label?
+- En textbox er en form for input felt, den kan skrives i, eller være kun læsbar. Den har et textchanged event tilknytter for det meste. Du kan ændre teksten i den ved at bruge Text property
+3. Hvad er et label?
+- Et label er noget text, som ikke kan ændres af end-useren. Den kan dog ændres i backend koden ved hjælp af dens content property
 4. Hvad er en combobox?
+- En combobox er en dropdown menu, som kan have values tilknyttet som emner på dropdown menuen. Du kan tilføje dem manuelt eller automatisk ved hjælp af xaml eller backend kode
 5. Hvad er en checkbox?
+- En checkbox er et felt du kan klikke på som har 2 forskellige stadier. 1. unchecked. 2. checked. 3. (Hvis du bruger property: IsThreeState) semi-checked
 6. Hvad er en radiobutton?
+- En radiobutton er en knap du kan klikke på, den kan være entet checked eller unchecked og hvis der er flere i et grid, kan kun en af dem være valgt
 
 Emne 2 Brugergrænseflader / Interaktion
 1. Hvad er en eventhandler?
+- En eventhandler er en del af event systemet, som konstant tracker ændringer i elementer der har eventhandlers. En eventhandler kan bruges til at checke efter klik på en knap osv.
 2. Hvilket relevante eventhandlers bruges der?
+- button_click, text_changed bruges for det meste, men der er en del andre
 3. Hvad er et grid?
+- et grid er en box, som kan opdele elementer på skærmen, den kan opdele dem i felter, så som 3x3 felter, eller 2x3 osv.
 4. Hvad er en groupbox?
+- en groupbox er en box eller ramme rundt omkring de elementer der er inde i boxen, den bruges til at lave opdelinger i f.eks. spørgeskemaer
 5. Hvad er forskellen på et stackpanel og et dockpanel?
+- Forskellen er at et stackpanel stacker ting ved siden af hinanden eller hvor end der er plads, og et dockpanel ligger ting i kanterne som er specificeret
 6. Hvad er et datagrid og hvornår bruger jeg det?
+- Et datagrid minder meget om en tabel i et excel ark, det er et element som kan vise data fra en database eller en text fil. Den bruges for det meste til at lave en brugergrænse flade på databaser
 7. Hvad er en listbox og hvornår bruger jeg det?
+- En listbox er en box som indeholder en liste af items. Den kan bruges hvis du skal vælge keybinds i et spil eller lignende
 
 Emne 3 OOP Object Oriented Programming
 1. Hvad er encapsulation og hvorfor bruger vi det?
+- encapsulation er at omringe metoder og lignende data som skal bruges sammen i f.eks en class eller lignende
 2. Hvad er inheritance og hvorfor bruger vi det?
+- inheritance er at nedarve variabler, properties, methods og lignende, fra en anden klasse. f.eks hvis du har en person klasse med navn osv. og så laver en elev klasse. Så ville du bruge inheritance til at nedarve navn variablet og lignende variabler til elev. Fordi at en elev jo også er en person
 3. Hvad betyder modulariseret software architektur? Mvc og Mvvm
+- Det er en måde at opdele kode og filer i, som gør det meget modulært og nemmere for andre at rette og ændre på din kode hvis du ikke er der. Lad os sige du har en fil der tager og fortæller dig vejret, hvis du har det i en anden fil og linket stopper med at virke, så kan en anden nemt gå ind og rette fejlen fordi at filen er for sig selv
 
 Emne 4 Systemudviklingsmetoder
 1. Kan jeg bruge Github og bruge det til programmering?
+- jeg bruger github til at have crossplatform access til alt min kode, så jeg altid kan arbejde derhjemme eller andre steder hvis jeg synes det.
 2. jeg kan omsætte en kravspecifikation til funktionallitet
+- Ja, det kan jeg. Ved at lave et uml diagram så kan jeg få en god forståelse for hvad den skal kunne og hvad det indeholder, derfra kan jeg begynde at kode
 3. Jeg kan læse og skrive UML diagrammer? Herunder Usecases og class diagrammer
+- Jeg skriver tit UML diagrammer da det hjælper mig med at holde overblik, især usecase og class diagrammer er brugbare fordi at det hjælper mig med at få overblik over hvad der måske mangler for at programmet virker som jeg gerne vil have det
 
 Emne 5 Persistente data
 1. Jeg kan oprette en database med modeller og tables udfra et ER(Entity Framework) Diagram?
+- Ja, og jeg har faktisk en del databaser allerede. Jeg finder det meget nemt at lave ER diagrammer og bruger dem tit til mit arbejde
 2. Jeg kan bruge Foreign og Primary Keys herunder: hvad man bruger dem til?
+- Et Foreign key er en key der refere til en primary key i et andet table, derfor har foreign key samme værdi som primary key. Du kan derfor ikke ændre foreign key uden at ændre primary key. Primary key er en unik key, som indikere at tablet skal joines fra den kolonne, desuden er alle rows unikke i et primary key column
 3. Hvad er CRUD?
+- Create, Read, Update, Delete
 4. Jeg kan anvende optimale datatyper til håndtering af SQL
 5. Jeg kan anvende en Client / Server software arkitektur
 6. Jeg kan anvende en webservice / API
