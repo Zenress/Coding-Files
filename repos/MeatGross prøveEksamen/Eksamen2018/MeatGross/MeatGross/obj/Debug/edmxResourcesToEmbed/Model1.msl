@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MeatGrossModelStoreContainer" CdmEntityContainer="MeatGrossEntities">
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="MeatGrossModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="companyName" ColumnName="companyName" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="zip" ColumnName="zip" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="contactName" ColumnName="contactName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Meat">
+      <EntityTypeMapping TypeName="MeatGrossModel.Meat">
+        <MappingFragment StoreEntitySet="Meat">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="meatType" ColumnName="meatType" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="priceDate" ColumnName="priceDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="MeatGrossModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="customer" ColumnName="customer" />
+          <ScalarProperty Name="meat" ColumnName="meat" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+          <ScalarProperty Name="orderPrice" ColumnName="orderPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZipCity">
+      <EntityTypeMapping TypeName="MeatGrossModel.ZipCity">
+        <MappingFragment StoreEntitySet="ZipCity">
+          <ScalarProperty Name="zip" ColumnName="zip" />
+          <ScalarProperty Name="cityName" ColumnName="cityName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,7 @@
+C:\Users\shan0382\source\repos\Test for codewars\Test for codewars\bin\Debug\Test for codewars.exe.config
+C:\Users\shan0382\source\repos\Test for codewars\Test for codewars\bin\Debug\Test for codewars.exe
+C:\Users\shan0382\source\repos\Test for codewars\Test for codewars\bin\Debug\Test for codewars.pdb
+C:\Users\shan0382\source\repos\Test for codewars\Test for codewars\obj\Debug\Test for codewars.csprojAssemblyReference.cache
+C:\Users\shan0382\source\repos\Test for codewars\Test for codewars\obj\Debug\Test for codewars.csproj.CoreCompileInputs.cache
+C:\Users\shan0382\source\repos\Test for codewars\Test for codewars\obj\Debug\Test for codewars.exe
+C:\Users\shan0382\source\repos\Test for codewars\Test for codewars\obj\Debug\Test for codewars.pdb

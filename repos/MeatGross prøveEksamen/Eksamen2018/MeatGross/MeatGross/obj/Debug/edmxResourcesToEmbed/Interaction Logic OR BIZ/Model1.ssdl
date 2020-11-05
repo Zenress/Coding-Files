@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MeatGrossModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="companyName" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="address" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="zip" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="mail" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="contactName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Meat">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="meatType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="stock" Type="int" Nullable="false" />
+    <Property Name="price" Type="money" Nullable="false" />
+    <Property Name="priceDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="customer" Type="int" Nullable="false" />
+    <Property Name="meat" Type="int" Nullable="false" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="orderDate" Type="date" Nullable="false" />
+    <Property Name="orderPrice" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ZipCity">
+    <Key>
+      <PropertyRef Name="zip" />
+    </Key>
+    <Property Name="zip" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="cityName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Customer__zip__29572725">
+    <End Role="ZipCity" Type="Self.ZipCity" Multiplicity="1" />
+    <End Role="Customer" Type="Self.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ZipCity">
+        <PropertyRef Name="zip" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="zip" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__customer__2A4B4B5E">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="customer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__meat__2B3F6F97">
+    <End Role="Meat" Type="Self.Meat" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Meat">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="meat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MeatGrossModelStoreContainer">
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Meat" EntityType="Self.Meat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ZipCity" EntityType="Self.ZipCity" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Customer__zip__29572725" Association="Self.FK__Customer__zip__29572725">
+      <End Role="ZipCity" EntitySet="ZipCity" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__customer__2A4B4B5E" Association="Self.FK__Orders__customer__2A4B4B5E">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__meat__2B3F6F97" Association="Self.FK__Orders__meat__2B3F6F97">
+      <End Role="Meat" EntitySet="Meat" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

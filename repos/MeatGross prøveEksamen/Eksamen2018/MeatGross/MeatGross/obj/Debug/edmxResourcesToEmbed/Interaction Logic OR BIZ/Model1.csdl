@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MeatGrossModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companyName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="zip" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mail" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="contactName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ZipCity" Relationship="Self.FK__Customer__zip__29572725" FromRole="Customer" ToRole="ZipCity" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__customer__2A4B4B5E" FromRole="Customer" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Meat">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="meatType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stock" Type="Int32" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="priceDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__meat__2B3F6F97" FromRole="Meat" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="customer" Type="Int32" Nullable="false" />
+    <Property Name="meat" Type="Int32" Nullable="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="orderDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="orderPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Customer1" Relationship="Self.FK__Orders__customer__2A4B4B5E" FromRole="Orders" ToRole="Customer" />
+    <NavigationProperty Name="Meat1" Relationship="Self.FK__Orders__meat__2B3F6F97" FromRole="Orders" ToRole="Meat" />
+  </EntityType>
+  <EntityType Name="ZipCity">
+    <Key>
+      <PropertyRef Name="zip" />
+    </Key>
+    <Property Name="zip" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cityName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK__Customer__zip__29572725" FromRole="ZipCity" ToRole="Customer" />
+  </EntityType>
+  <Association Name="FK__Customer__zip__29572725">
+    <End Role="ZipCity" Type="Self.ZipCity" Multiplicity="1" />
+    <End Role="Customer" Type="Self.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ZipCity">
+        <PropertyRef Name="zip" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="zip" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__customer__2A4B4B5E">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="customer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__meat__2B3F6F97">
+    <End Role="Meat" Type="Self.Meat" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Meat">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="meat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MeatGrossEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customer" EntityType="Self.Customer" />
+    <EntitySet Name="Meat" EntityType="Self.Meat" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" />
+    <EntitySet Name="ZipCity" EntityType="Self.ZipCity" />
+    <AssociationSet Name="FK__Customer__zip__29572725" Association="Self.FK__Customer__zip__29572725">
+      <End Role="ZipCity" EntitySet="ZipCity" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__customer__2A4B4B5E" Association="Self.FK__Orders__customer__2A4B4B5E">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__meat__2B3F6F97" Association="Self.FK__Orders__meat__2B3F6F97">
+      <End Role="Meat" EntitySet="Meat" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
