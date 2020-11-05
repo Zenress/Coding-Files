@@ -1,0 +1,9 @@
+1) Præsentation
+  - 2) Præsenter sig selv
+  - 3) vis program
+  - 4) Vis effekter (buttons osv)
+  - 5) sql / primary and foreign keys / relations / db diagram
+  - 6) c# Models (Ef Diagram) / inheritance
+  - 7) methods / CRUD
+  - 8) Api
+  - 9) Unit Testing / AAA metoden / Arrange, Act, Assert
