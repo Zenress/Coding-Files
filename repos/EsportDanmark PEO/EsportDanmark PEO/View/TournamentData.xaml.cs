@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EsportDanmark_PEO.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,11 @@ namespace EsportDanmark_PEO
     /// </summary>
     public partial class TournamentData : Window
     {
+        private readonly TournamentDataViewModel viewModel;
         public TournamentData()
         {
             InitializeComponent();
+            viewModel = new TournamentDataViewModel(this);
         }
     }
 }

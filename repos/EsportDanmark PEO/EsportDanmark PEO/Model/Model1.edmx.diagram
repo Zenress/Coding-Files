@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="50e444938cb644299dd7c2e1e6155490" Name="Diagram1">
+        <EntityTypeShape EntityType="EsportDanmarkModel.Employees" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EsportDanmarkModel.Players" Width="1.5" PointX="0.875" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EsportDanmarkModel.Sponsorer" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EsportDanmarkModel.Tournament" Width="1.5" PointX="0.875" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="EsportDanmarkModel.FK__Tournamen__Judge__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="EsportDanmarkModel.FK__Players__Tournam__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="EsportDanmarkModel.FK__Sponsorer__Playe__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="EsportDanmarkModel.FK__Tournamen__Playe__2F10007B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

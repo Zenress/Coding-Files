@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EsportDanmark_PEO.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,11 @@ namespace EsportDanmark_PEO
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly MainWindowViewModel viewModel;
         public MainWindow()
         {
             InitializeComponent();
+            viewModel = new MainWindowViewModel(this);
         }
     }
 }

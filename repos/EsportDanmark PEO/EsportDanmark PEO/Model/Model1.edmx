@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EsportDanmarkModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Employees">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="TlfNr" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="Pay" Type="money" Nullable="false" />
+          <Property Name="JobType" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="JudgeLvl" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Players">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="SummonerName" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="Rank" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="TlfNr" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="TournamentType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TournamentId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sponsorer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="CompanySector" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="PlayerId" Type="int" Nullable="false" />
+          <Property Name="SponsorAmount" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tournament">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TournamentName" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="PlayerId" Type="int" Nullable="false" />
+          <Property Name="JudgeId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Players__Tournam__2D27B809">
+          <End Role="Tournament" Type="Self.Tournament" Multiplicity="1" />
+          <End Role="Players" Type="Self.Players" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tournament">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Players">
+              <PropertyRef Name="TournamentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sponsorer__Playe__2E1BDC42">
+          <End Role="Players" Type="Self.Players" Multiplicity="1" />
+          <End Role="Sponsorer" Type="Self.Sponsorer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Players">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sponsorer">
+              <PropertyRef Name="PlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Tournamen__Judge__300424B4">
+          <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+          <End Role="Tournament" Type="Self.Tournament" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employees">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tournament">
+              <PropertyRef Name="JudgeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Tournamen__Playe__2F10007B">
+          <End Role="Players" Type="Self.Players" Multiplicity="1" />
+          <End Role="Tournament" Type="Self.Tournament" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Players">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tournament">
+              <PropertyRef Name="PlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EsportDanmarkModelStoreContainer">
+          <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Players" EntityType="Self.Players" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sponsorer" EntityType="Self.Sponsorer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tournament" EntityType="Self.Tournament" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Players__Tournam__2D27B809" Association="Self.FK__Players__Tournam__2D27B809">
+            <End Role="Tournament" EntitySet="Tournament" />
+            <End Role="Players" EntitySet="Players" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sponsorer__Playe__2E1BDC42" Association="Self.FK__Sponsorer__Playe__2E1BDC42">
+            <End Role="Players" EntitySet="Players" />
+            <End Role="Sponsorer" EntitySet="Sponsorer" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Tournamen__Judge__300424B4" Association="Self.FK__Tournamen__Judge__300424B4">
+            <End Role="Employees" EntitySet="Employees" />
+            <End Role="Tournament" EntitySet="Tournament" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Tournamen__Playe__2F10007B" Association="Self.FK__Tournamen__Playe__2F10007B">
+            <End Role="Players" EntitySet="Players" />
+            <End Role="Tournament" EntitySet="Tournament" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EsportDanmarkModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Employees">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TlfNr" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Pay" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="JobType" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="JudgeLvl" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Tournament" Relationship="Self.FK__Tournamen__Judge__300424B4" FromRole="Employees" ToRole="Tournament" />
+        </EntityType>
+        <EntityType Name="Players">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SummonerName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Rank" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TlfNr" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TournamentType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TournamentId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Tournament" Relationship="Self.FK__Players__Tournam__2D27B809" FromRole="Players" ToRole="Tournament" />
+          <NavigationProperty Name="Sponsorer" Relationship="Self.FK__Sponsorer__Playe__2E1BDC42" FromRole="Players" ToRole="Sponsorer" />
+          <NavigationProperty Name="Tournament1" Relationship="Self.FK__Tournamen__Playe__2F10007B" FromRole="Players" ToRole="Tournament" />
+        </EntityType>
+        <EntityType Name="Sponsorer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="CompanyName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanySector" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PlayerId" Type="Int32" Nullable="false" />
+          <Property Name="SponsorAmount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <NavigationProperty Name="Players" Relationship="Self.FK__Sponsorer__Playe__2E1BDC42" FromRole="Sponsorer" ToRole="Players" />
+        </EntityType>
+        <EntityType Name="Tournament">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TournamentName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PlayerId" Type="Int32" Nullable="false" />
+          <Property Name="JudgeId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Employees" Relationship="Self.FK__Tournamen__Judge__300424B4" FromRole="Tournament" ToRole="Employees" />
+          <NavigationProperty Name="Players" Relationship="Self.FK__Players__Tournam__2D27B809" FromRole="Tournament" ToRole="Players" />
+          <NavigationProperty Name="Players1" Relationship="Self.FK__Tournamen__Playe__2F10007B" FromRole="Tournament" ToRole="Players" />
+        </EntityType>
+        <Association Name="FK__Tournamen__Judge__300424B4">
+          <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+          <End Role="Tournament" Type="Self.Tournament" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employees">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tournament">
+              <PropertyRef Name="JudgeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Players__Tournam__2D27B809">
+          <End Role="Tournament" Type="Self.Tournament" Multiplicity="1" />
+          <End Role="Players" Type="Self.Players" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tournament">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Players">
+              <PropertyRef Name="TournamentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sponsorer__Playe__2E1BDC42">
+          <End Role="Players" Type="Self.Players" Multiplicity="1" />
+          <End Role="Sponsorer" Type="Self.Sponsorer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Players">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sponsorer">
+              <PropertyRef Name="PlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Tournamen__Playe__2F10007B">
+          <End Role="Players" Type="Self.Players" Multiplicity="1" />
+          <End Role="Tournament" Type="Self.Tournament" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Players">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tournament">
+              <PropertyRef Name="PlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EsportDanmarkEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Employees" EntityType="Self.Employees" />
+          <EntitySet Name="Players" EntityType="Self.Players" />
+          <EntitySet Name="Sponsorer" EntityType="Self.Sponsorer" />
+          <EntitySet Name="Tournament" EntityType="Self.Tournament" />
+          <AssociationSet Name="FK__Tournamen__Judge__300424B4" Association="Self.FK__Tournamen__Judge__300424B4">
+            <End Role="Employees" EntitySet="Employees" />
+            <End Role="Tournament" EntitySet="Tournament" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Players__Tournam__2D27B809" Association="Self.FK__Players__Tournam__2D27B809">
+            <End Role="Tournament" EntitySet="Tournament" />
+            <End Role="Players" EntitySet="Players" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sponsorer__Playe__2E1BDC42" Association="Self.FK__Sponsorer__Playe__2E1BDC42">
+            <End Role="Players" EntitySet="Players" />
+            <End Role="Sponsorer" EntitySet="Sponsorer" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Tournamen__Playe__2F10007B" Association="Self.FK__Tournamen__Playe__2F10007B">
+            <End Role="Players" EntitySet="Players" />
+            <End Role="Tournament" EntitySet="Tournament" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EsportDanmarkModelStoreContainer" CdmEntityContainer="EsportDanmarkEntities">
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="EsportDanmarkModel.Employees">
+              <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TlfNr" ColumnName="TlfNr" />
+                <ScalarProperty Name="Pay" ColumnName="Pay" />
+                <ScalarProperty Name="JobType" ColumnName="JobType" />
+                <ScalarProperty Name="JudgeLvl" ColumnName="JudgeLvl" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Players">
+            <EntityTypeMapping TypeName="EsportDanmarkModel.Players">
+              <MappingFragment StoreEntitySet="Players">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SummonerName" ColumnName="SummonerName" />
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+                <ScalarProperty Name="TlfNr" ColumnName="TlfNr" />
+                <ScalarProperty Name="TournamentType" ColumnName="TournamentType" />
+                <ScalarProperty Name="TournamentId" ColumnName="TournamentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sponsorer">
+            <EntityTypeMapping TypeName="EsportDanmarkModel.Sponsorer">
+              <MappingFragment StoreEntitySet="Sponsorer">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="CompanySector" ColumnName="CompanySector" />
+                <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+                <ScalarProperty Name="SponsorAmount" ColumnName="SponsorAmount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tournament">
+            <EntityTypeMapping TypeName="EsportDanmarkModel.Tournament">
+              <MappingFragment StoreEntitySet="Tournament">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TournamentName" ColumnName="TournamentName" />
+                <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+                <ScalarProperty Name="JudgeId" ColumnName="JudgeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
