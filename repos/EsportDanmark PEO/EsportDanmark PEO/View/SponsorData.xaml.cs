@@ -26,5 +26,21 @@ namespace EsportDanmark_PEO
             InitializeComponent();
             viewModel = new SponsorDataViewModel(this);
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            EsportDanmark_PEO.Model.EsportDanmarkDataSet esportDanmarkDataSet = ((EsportDanmark_PEO.Model.EsportDanmarkDataSet)(this.FindResource("esportDanmarkDataSet")));
+            // Load data into the table Sponsorer. You can modify this code as needed.
+            EsportDanmark_PEO.Model.EsportDanmarkDataSetTableAdapters.SponsorerTableAdapter esportDanmarkDataSetSponsorerTableAdapter = new EsportDanmark_PEO.Model.EsportDanmarkDataSetTableAdapters.SponsorerTableAdapter();
+            esportDanmarkDataSetSponsorerTableAdapter.Fill(esportDanmarkDataSet.Sponsorer);
+            System.Windows.Data.CollectionViewSource sponsorerViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("sponsorerViewSource")));
+            sponsorerViewSource.View.MoveCurrentToFirst();
+        }
+
+        private void Check_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.SponserAmount();
+        }
     }
 }

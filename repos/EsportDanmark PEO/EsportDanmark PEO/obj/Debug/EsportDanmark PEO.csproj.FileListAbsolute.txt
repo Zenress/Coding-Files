@@ -27,3 +27,8 @@ C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\Esp
 C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO.csproj.CopyComplete
 C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO.exe
 C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\EsportDanmark PEO.pdb
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\SummonerCheck.g.cs
+C:\Users\shan0382\source\repos\EsportDanmark PEO\EsportDanmark PEO\obj\Debug\View\SummonerCheck.baml

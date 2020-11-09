@@ -1,8 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using EsportDanmark_PEO.Model;
+using EsportDanmark_PEO.View;
+using Newtonsoft.Json;
 
 namespace EsportDanmark_PEO.ViewModel
 {
@@ -52,6 +60,12 @@ namespace EsportDanmark_PEO.ViewModel
         {
             Window = window;
         }
+
+        public void OpenWindow()
+        {
+            SummonerCheck newWindow = new SummonerCheck();
+            newWindow.ShowDialog();            
+        }
     }
     #endregion
 
@@ -91,6 +105,74 @@ namespace EsportDanmark_PEO.ViewModel
         {
             Window = window;
         }
+
+        public void SponserAmount()
+        {
+            /*decimal sum = 0;
+
+            foreach (DataRowView row in Window.sponsorerDataGrid1.ItemsSource)
+            {
+                sum += row[_esportDb.Sponsorer.Single().SponsorAmount];
+            }
+            Window.SponseredAmount.Content = sum;*/
+        }
+    }
+    #endregion
+
+    #region API, Checking whether the Summoner exists or not
+    public class RiotApi
+    {
+        Model.EsportDanmarkEntities _esportDb = new Model.EsportDanmarkEntities();
+        public SummonerCheck Window { get; set; }
+        public RiotApi(SummonerCheck window)
+        {
+            Window = window;            
+        }
+        
+
+        public string SummonerName;
+        public long SummonerLvl;
+        public long RevisionDate;
+        public string SummonerId;
+
+        
+        public void GetSummoner(string input)
+        {            
+            try 
+	        {
+                string url = $"https://{Window.RegionSelect.SelectedItem}.api.riotgames.com/lol/summoner/v4/summoners/by-name/{input}?api_key=RGAPI-85d8c7f8-3460-43f6-ae58-def8b5d2e44e";
+                WebRequest requestObject = WebRequest.Create(url);
+                requestObject.Method = "GET";
+                HttpWebResponse responseObject = null;
+                responseObject = (HttpWebResponse)requestObject.GetResponse();
+
+                string jsonResult;
+                using (Stream myStream = responseObject.GetResponseStream())
+                {
+                    StreamReader sr = new StreamReader(myStream);
+                    jsonResult = sr.ReadToEnd();
+                    sr.Close();
+                }
+                Summoner check = JsonConvert.DeserializeObject<Summoner>(jsonResult);
+                Window.SummonerName.Text = check.Name;
+                Window.SummonerLvl.Text = check.SummonerLevel.ToString();
+                var date = (new DateTime(1970, 1, 1)).AddMilliseconds(check.RevisionDate);
+                Window.RevisionDate.Content = "Revision Date: \n"+ date;
+                SummonerId = check.Id;
+    }
+	        catch (Exception)
+	        {
+		        throw;
+	        }
+        }        
+    }
+
+    public class Summoner
+    {
+        public string Name { get; set; }
+        public long SummonerLevel { get; set; }
+        public long RevisionDate { get; set; }
+        public string Id { get; set; }
     }
     #endregion
 }

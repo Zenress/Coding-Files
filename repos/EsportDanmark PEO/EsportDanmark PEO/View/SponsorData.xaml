@@ -1,12 +1,45 @@
-﻿<Window x:Class="EsportDanmark_PEO.SponsorData"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EsportDanmark_PEO"
+        xmlns:Model="clr-namespace:EsportDanmark_PEO.Model" x:Class="EsportDanmark_PEO.SponsorData"
         mc:Ignorable="d"
-        Title="SponsorData" Height="450" Width="800">
+        Title="SponsorData" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Model:EsportDanmarkDataSet x:Key="esportDanmarkDataSet"/>
+        <CollectionViewSource x:Key="sponsorerViewSource" Source="{Binding Sponsorer, Source={StaticResource esportDanmarkDataSet}}"/>
+    </Window.Resources>
     <Grid>
-        
+        <TabControl>
+            <TabItem Header="Totalt Sponsoreret">
+                <Grid DataContext="{StaticResource sponsorerViewSource}">
+                    <DataGrid x:Name="sponsorerDataGrid1" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10,10,10,94" RowDetailsVisibilityMode="VisibleWhenSelected">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="companyNameColumn1" Binding="{Binding CompanyName}" Header="Company Name" Width="SizeToHeader"/>
+                            <DataGridTextColumn x:Name="playerIdColumn1" Binding="{Binding PlayerId}" Header="Player Id" Width="SizeToHeader"/>
+                            <DataGridTextColumn x:Name="sponsorAmountColumn1" Binding="{Binding SponsorAmount}" Header="Sponsor Amount" Width="SizeToHeader"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label x:Name="SponseredAmount" Content="Sponsoreret Amount here" HorizontalAlignment="Left" Margin="315,331,0,0" VerticalAlignment="Top"/>
+
+                    <Button x:Name="Check" Content="Button" Width="75" Margin="547,326,166,31" Click="Check_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Alle Sponsorer">
+                <Grid DataContext="{StaticResource sponsorerViewSource}">
+                    <DataGrid x:Name="sponsorerDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="10" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="idColumn" Width="SizeToHeader" Header="Id" Binding="{Binding Id}"/>
+                            <DataGridTextColumn x:Name="companyNameColumn" Width="SizeToHeader" Header="Company Name" Binding="{Binding CompanyName}"/>
+                            <DataGridTextColumn x:Name="companySectorColumn" Width="SizeToHeader" Header="Company Sector" Binding="{Binding CompanySector}"/>
+                            <DataGridTextColumn x:Name="playerIdColumn" Width="SizeToHeader" Header="Player Id" Binding="{Binding PlayerId}"/>
+                            <DataGridTextColumn x:Name="sponsorAmountColumn" Width="SizeToHeader" Header="Sponsor Amount" Binding="{Binding SponsorAmount}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

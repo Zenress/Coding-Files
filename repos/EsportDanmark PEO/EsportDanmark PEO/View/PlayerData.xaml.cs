@@ -26,5 +26,21 @@ namespace EsportDanmark_PEO
             InitializeComponent();
             viewModel = new PlayerDataViewModel(this);
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            EsportDanmark_PEO.Model.EsportDanmarkDataSet esportDanmarkDataSet = ((EsportDanmark_PEO.Model.EsportDanmarkDataSet)(this.FindResource("esportDanmarkDataSet")));
+            // Load data into the table Players. You can modify this code as needed.
+            EsportDanmark_PEO.Model.EsportDanmarkDataSetTableAdapters.PlayersTableAdapter esportDanmarkDataSetPlayersTableAdapter = new EsportDanmark_PEO.Model.EsportDanmarkDataSetTableAdapters.PlayersTableAdapter();
+            esportDanmarkDataSetPlayersTableAdapter.Fill(esportDanmarkDataSet.Players);
+            System.Windows.Data.CollectionViewSource playersViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("playersViewSource")));
+            playersViewSource.View.MoveCurrentToFirst();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.OpenWindow();
+        }
     }
 }

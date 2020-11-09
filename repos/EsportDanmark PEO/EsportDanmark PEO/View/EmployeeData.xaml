@@ -1,12 +1,69 @@
-﻿<Window x:Class="EsportDanmark_PEO.EmployeeData"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EsportDanmark_PEO"
+        xmlns:Model="clr-namespace:EsportDanmark_PEO.Model" x:Class="EsportDanmark_PEO.EmployeeData"
         mc:Ignorable="d"
-        Title="EmployeeData" Height="450" Width="800">
+        Title="EmployeeData" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Model:EsportDanmarkDataSet x:Key="esportDanmarkDataSet"/>
+        <CollectionViewSource x:Key="employeesViewSource" Source="{Binding Employees, Source={StaticResource esportDanmarkDataSet}}"/>
+    </Window.Resources>
     <Grid>
-        
+        <TabControl>
+            <TabItem Header="Reg. Ansattes Lønudgifter">
+                <Grid DataContext="{StaticResource employeesViewSource}">
+                    <DataGrid x:Name="employeesDataGrid2" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10" RowDetailsVisibilityMode="VisibleWhenSelected">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="idColumn2" Binding="{Binding Id}" Header="Id" Width="SizeToHeader"/>
+                            <DataGridTextColumn x:Name="nameColumn2" Binding="{Binding Name}" Header="Name" Width="SizeToHeader"/>
+                            <DataGridTextColumn x:Name="payColumn2" Binding="{Binding Pay}" Header="Pay" Width="SizeToHeader"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Dommeres deres løn">
+                <Grid DataContext="{StaticResource employeesViewSource}">
+                    <DataGrid x:Name="JudgeDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10" RowDetailsVisibilityMode="VisibleWhenSelected">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="idColumn1" Binding="{Binding Id}" Header="Id" Width="SizeToHeader"/>
+                            <DataGridTextColumn x:Name="nameColumn1" Binding="{Binding Name}" Header="Name" Width="SizeToHeader"/>
+                            <DataGridTextColumn x:Name="tlfNrColumn1" Binding="{Binding TlfNr}" Header="Tlf Nr" Width="SizeToHeader"/>
+                            <DataGridTextColumn x:Name="payColumn1" Binding="{Binding Pay}" Header="Pay" Width="SizeToHeader"/>
+                            <DataGridTextColumn x:Name="jobTypeColumn1" Binding="{Binding JobType}" Header="Job Type" Width="SizeToHeader"/>
+                            <DataGridTextColumn x:Name="judgeLvlColumn1" Binding="{Binding JudgeLvl}" Header="Judge Lvl" Width="SizeToHeader"/>
+                        </DataGrid.Columns>
+                        <DataGrid.ItemContainerStyle>
+                            <Style TargetType="DataGridRow">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding JobType}"  Value="Secretary">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding JobType}"  Value="Manager">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.ItemContainerStyle>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Samtlige Ansatte">
+                <Grid DataContext="{StaticResource employeesViewSource}">
+                    <DataGrid x:Name="employeesDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="10" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="idColumn" Width="SizeToHeader" Header="Id" Binding="{Binding Id}"/>
+                            <DataGridTextColumn x:Name="nameColumn" Width="SizeToHeader" Header="Name" Binding="{Binding Name}"/>
+                            <DataGridTextColumn x:Name="tlfNrColumn" Width="SizeToHeader" Header="Tlf Nr" Binding="{Binding TlfNr}"/>
+                            <DataGridTextColumn x:Name="payColumn" Width="SizeToHeader" Header="Pay" Binding="{Binding Pay}"/>
+                            <DataGridTextColumn x:Name="jobTypeColumn" Width="SizeToHeader" Header="Job Type" Binding="{Binding JobType}"/>
+                            <DataGridTextColumn x:Name="judgeLvlColumn" Width="SizeToHeader" Header="Judge Lvl" Binding="{Binding JudgeLvl}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
