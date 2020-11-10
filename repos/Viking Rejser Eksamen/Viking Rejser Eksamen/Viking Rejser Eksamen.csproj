@@ -108,6 +108,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VikingRejserEksamenDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="View\Tilmeldinger.xaml.cs">
+      <DependentUpon>Tilmeldinger.xaml</DependentUpon>
+    </Compile>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -134,6 +137,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\NyTransportoer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Tilmeldinger.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
