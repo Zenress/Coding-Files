@@ -23,11 +23,9 @@ C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\D
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyKunde.g.cs
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyRejse.g.cs
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTilmelding.g.cs
-C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportør.g.cs
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyKunde.baml
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyRejse.baml
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTilmelding.baml
-C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportør.baml
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportoer.g.cs
 C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csprojAssemblyReference.cache
 C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\MainWindow.g.cs
@@ -59,3 +57,4 @@ C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking 
 C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csproj.GenerateResource.cache
 C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csproj.CoreCompileInputs.cache
 C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csproj.CopyComplete
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportoer.baml

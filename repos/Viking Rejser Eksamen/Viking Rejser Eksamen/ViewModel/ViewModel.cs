@@ -147,7 +147,7 @@ namespace Viking_Rejser_Eksamen.ViewModel
                     Adresse = Window.KundeAdresse.Text,
                     TelefonNr = Window.KundeTlfNr.Text                    
                 };
-                _rejseDb.Transportoer.Add(nyKunde);
+                _rejseDb.Kunder.Add(nyKunde);
 
                 MainWindow.kunderDataGrid.ItemsSource = _rejseDb.Kunder.ToList();
 
