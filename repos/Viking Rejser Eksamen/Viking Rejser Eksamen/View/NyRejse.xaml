@@ -8,9 +8,9 @@
         Title="NyRejse" Height="450" Width="350">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="60*"/>
-            <ColumnDefinition Width="248*"/>
-            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="230"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Label Content="Opret ny Rejse" Grid.Column="1" HorizontalAlignment="Left" Margin="72,22,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="RejseTitel" Grid.Column="1" Height="23" Margin="56,53,56,0" TextWrapping="Wrap" Text="Titel" VerticalAlignment="Top"/>

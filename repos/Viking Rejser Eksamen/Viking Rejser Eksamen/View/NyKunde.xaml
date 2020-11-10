@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Viking_Rejser_Eksamen.View"
         mc:Ignorable="d"
-        Title="NyKunde" Height="450" Width="800">
+        Title="NyKunde" Height="240.976" Width="350">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="230"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Opret Ny Kunde" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="KundeNavn" Height="23" Margin="55,52,55,0" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="KundeAdresse" Height="23" Margin="55,87,55,0" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="KundeTlfNr" Height="23" Margin="55,122,55,0" TextWrapping="Wrap" Text="Telefon Nummer" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="RejseCreate" Content="Create" Margin="78,160,78,0" VerticalAlignment="Top" Width="74" Click="RejseCreate_Click" Grid.Column="1"/>
+
     </Grid>
 </Window>

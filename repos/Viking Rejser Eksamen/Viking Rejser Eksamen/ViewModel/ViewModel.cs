@@ -27,7 +27,7 @@ namespace Viking_Rejser_Eksamen.ViewModel
 
         public void OpenNewCustomerWindow()
         {
-            NyKunde newWindow = new NyKunde();
+            NyKunde newWindow = new NyKunde(Window);
             newWindow.ShowDialog();
         }
 
@@ -113,6 +113,43 @@ namespace Viking_Rejser_Eksamen.ViewModel
                 _rejseDb.Transportoer.Add(nyTransportør);
 
                 MainWindow.transportoerDataGrid.ItemsSource = _rejseDb.Transportoer.ToList();
+
+                _rejseDb.SaveChanges();
+                Window.Hide();
+            }
+            catch (FormatException)
+            {
+
+                throw;
+            }
+        }
+    }
+    #endregion
+    #region Kunde ViewModel Class
+    class NyKundeViewModel
+    {
+        VikingRejserEksamenEntities _rejseDb = new VikingRejserEksamenEntities();
+        public NyKunde Window { get; set; }
+        public MainWindow MainWindow { get; set; }
+        public NyKundeViewModel(NyKunde window, MainWindow mainWindow)
+        {
+            Window = window;
+            MainWindow = mainWindow;
+        }
+
+        public void NewCustomer()
+        {
+            try
+            {
+                Kunder nyKunde = new Kunder()
+                {
+                    Navn = Window.KundeNavn.Text,
+                    Adresse = Window.KundeAdresse.Text,
+                    TelefonNr = Window.KundeTlfNr.Text                    
+                };
+                _rejseDb.Transportoer.Add(nyKunde);
+
+                MainWindow.kunderDataGrid.ItemsSource = _rejseDb.Kunder.ToList();
 
                 _rejseDb.SaveChanges();
                 Window.Hide();

@@ -22,7 +22,7 @@
                         <ColumnDefinition Width="301*"/>
                         <ColumnDefinition Width="487*"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="NewKundeBtn" Content="Ny Kunde" HorizontalAlignment="Left" Margin="102,46,0,0" VerticalAlignment="Top" Width="83" Height="33"/>
+                    <Button x:Name="NewKundeBtn" Content="Ny Kunde" HorizontalAlignment="Left" Margin="102,46,0,0" VerticalAlignment="Top" Width="83" Height="33" Click="NewKundeBtn_Click"/>
                     <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding Mode=OneWay}">
                         <TabItem Header="Alle Kunder">
                             <DataGrid x:Name="kunderDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="10,10,9.2,70" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" Grid.Column="1">

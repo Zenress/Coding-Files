@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Viking_Rejser_Eksamen.ViewModel;
 
 namespace Viking_Rejser_Eksamen.View
 {
@@ -19,9 +20,16 @@ namespace Viking_Rejser_Eksamen.View
     /// </summary>
     public partial class NyKunde : Window
     {
-        public NyKunde()
+        private readonly NyKundeViewModel viewModel;
+        public NyKunde(MainWindow mainWindow)
         {
             InitializeComponent();
+            viewModel = new NyKundeViewModel(this, mainWindow);
+        }
+
+        private void RejseCreate_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
