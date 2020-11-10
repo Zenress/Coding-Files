@@ -1,0 +1,227 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Viking_Rejser_Eksamen"
+        xmlns:Model="clr-namespace:Viking_Rejser_Eksamen.Model" x:Class="Viking_Rejser_Eksamen.MainWindow"
+        mc:Ignorable="d"
+        Title="Viking Rejser" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Model:VikingRejserEksamenDataSet x:Key="vikingRejserEksamenDataSet"/>
+        <CollectionViewSource x:Key="kunderViewSource" Source="{Binding Kunder, Source={StaticResource vikingRejserEksamenDataSet}}"/>
+        <CollectionViewSource x:Key="transportoerViewSource" Source="{Binding Transportoer, Source={StaticResource vikingRejserEksamenDataSet}}"/>
+        <CollectionViewSource x:Key="rejsearrangementerViewSource" Source="{Binding Rejsearrangementer, Source={StaticResource vikingRejserEksamenDataSet}}"/>
+        <CollectionViewSource x:Key="rejsetilmeldingerViewSource" Source="{Binding Rejsetilmeldinger, Source={StaticResource vikingRejserEksamenDataSet}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource transportoerViewSource}">
+        <TabControl>
+            <TabItem Header="Kunder">
+                <Grid DataContext="{StaticResource kunderViewSource}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="301*"/>
+                        <ColumnDefinition Width="487*"/>
+                    </Grid.ColumnDefinitions>
+                    <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding}">
+                        <TabItem Header="Alle Kunder">
+                            <DataGrid x:Name="kunderDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="10,10,9.2,70" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" Grid.Column="1">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn x:Name="idColumn" Width="SizeToHeader" IsReadOnly="True" Header="Id" Binding="{Binding Id}"/>
+                                    <DataGridTextColumn x:Name="navnColumn" Width="SizeToHeader" Header="Navn" Binding="{Binding Navn}"/>
+                                    <DataGridTextColumn x:Name="adresseColumn" Width="SizeToHeader" Header="Adresse" Binding="{Binding Adresse}"/>
+                                    <DataGridTextColumn x:Name="telefonNrColumn" Width="SizeToHeader" Header="Telefon Nr" Binding="{Binding TelefonNr}"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </TabItem>
+                        <TabItem Header="Kunder med mere end 1 arrangement">
+                            <Grid>
+                                <DataGrid x:Name="kunderDataGrid1" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10,10,9.6,9.8" RowDetailsVisibilityMode="VisibleWhenSelected">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn x:Name="idColumn1" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="navnColumn1" Binding="{Binding Navn}" Header="Navn" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="adresseColumn1" Binding="{Binding Adresse}" Header="Adresse" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="telefonNrColumn1" Binding="{Binding TelefonNr}" Header="Telefon Nr" Width="SizeToHeader"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Transportør">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="301*"/>
+                        <ColumnDefinition Width="487*"/>
+                    </Grid.ColumnDefinitions>
+                    <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding Mode=OneWay}">
+                        <TabItem Header="Alle Transportører">
+                            <Grid DataContext="{StaticResource transportoerViewSource}">
+                                <DataGrid x:Name="transportoerDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10,10,9.6,10" RowDetailsVisibilityMode="VisibleWhenSelected">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn x:Name="idColumn2" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="navnColumn2" Binding="{Binding Navn}" Header="Navn" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="adresseColumn2" Binding="{Binding Adresse}" Header="Adresse" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="telefonNrColumn2" Binding="{Binding TelefonNr}" Header="Telefon Nr" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="bemaerkningerColumn" Binding="{Binding Bemaerkninger}" Header="Bemaerkninger" Width="SizeToHeader"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Transportør der er tilmeldt mere end 4 arrangementer">
+                            <Grid>
+                                <DataGrid x:Name="transportoerDataGrid1" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10,10,9.6,10" RowDetailsVisibilityMode="VisibleWhenSelected">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn x:Name="idColumn3" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="navnColumn3" Binding="{Binding Navn}" Header="Navn" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="adresseColumn3" Binding="{Binding Adresse}" Header="Adresse" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="telefonNrColumn3" Binding="{Binding TelefonNr}" Header="Telefon Nr" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="bemaerkningerColumn1" Binding="{Binding Bemaerkninger}" Header="Bemaerkninger" Width="SizeToHeader"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                    </TabControl >
+                </Grid>
+            </TabItem>
+            <TabItem Header="Rejsearrangementer">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="301*"/>
+                        <ColumnDefinition Width="487*"/>
+                    </Grid.ColumnDefinitions>
+                    <TabControl Grid.Column="1" Margin="0.2,0,0,0">
+                        <TabItem Header="Alle Rejser">
+                            <Grid>
+                                <DataGrid x:Name="rejsearrangementerDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource rejsearrangementerViewSource}}" Margin="0,0,-0.4,0" RowDetailsVisibilityMode="VisibleWhenSelected">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn x:Name="idColumn4" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="titelColumn" Binding="{Binding Titel}" Header="Titel" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="byColumn" Binding="{Binding By}" Header="By" Width="SizeToHeader"/>
+                                        <DataGridTemplateColumn x:Name="startDatoColumn" Header="Start Dato" Width="SizeToHeader">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <DatePicker SelectedDate="{Binding StartDato, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTemplateColumn x:Name="slutDatoColumn" Header="Slut Dato" Width="SizeToHeader">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <DatePicker SelectedDate="{Binding SlutDato, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTextColumn x:Name="maxDeltagereColumn" Binding="{Binding MaxDeltagere}" Header="Max Deltagere" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="transportoerColumn" Binding="{Binding Transportoer}" Header="Transportoer" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="prisPrDeltagerColumn" Binding="{Binding PrisPrDeltager}" Header="Pris Pr Deltager" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="rejseTilmeldingerColumn" Binding="{Binding RejseTilmeldinger}" Header="Rejse Tilmeldinger" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="beskrivelseColumn" Binding="{Binding Beskrivelse}" Header="Beskrivelse" Width="SizeToHeader"/>
+                                    </DataGrid.Columns>
+                                    <DataGrid.RowDetailsTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Margin="20,10">
+                                                <TextBlock Text="{Binding Kunde}"/>
+                                                <TextBlock Text="{Binding Rejse}"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGrid.RowDetailsTemplate>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Afsluttede Arrangementer">
+                            <Grid>
+                                <DataGrid x:Name="rejsearrangementerDataGrid1" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource rejsearrangementerViewSource}}" Margin="10,10,9.6,10" RowDetailsVisibilityMode="VisibleWhenSelected">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn x:Name="idColumn5" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="titelColumn1" Binding="{Binding Titel}" Header="Titel" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="byColumn1" Binding="{Binding By}" Header="By" Width="SizeToHeader"/>
+                                        <DataGridTemplateColumn x:Name="startDatoColumn1" Header="Start Dato" Width="SizeToHeader">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <DatePicker SelectedDate="{Binding StartDato, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTemplateColumn x:Name="slutDatoColumn1" Header="Slut Dato" Width="SizeToHeader">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <DatePicker SelectedDate="{Binding SlutDato, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTextColumn x:Name="maxDeltagereColumn1" Binding="{Binding MaxDeltagere}" Header="Max Deltagere" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="transportoerColumn1" Binding="{Binding Transportoer}" Header="Transportoer" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="prisPrDeltagerColumn1" Binding="{Binding PrisPrDeltager}" Header="Pris Pr Deltager" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="rejseTilmeldingerColumn1" Binding="{Binding RejseTilmeldinger}" Header="Rejse Tilmeldinger" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="beskrivelseColumn1" Binding="{Binding Beskrivelse}" Header="Beskrivelse" Width="SizeToHeader"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Iganværende Arrangementer">
+                            <Grid>
+                                <DataGrid x:Name="rejsearrangementerDataGrid2" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource rejsearrangementerViewSource}}" Margin="10,10,9.6,10" RowDetailsVisibilityMode="VisibleWhenSelected">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn x:Name="idColumn6" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="titelColumn2" Binding="{Binding Titel}" Header="Titel" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="byColumn2" Binding="{Binding By}" Header="By" Width="SizeToHeader"/>
+                                        <DataGridTemplateColumn x:Name="startDatoColumn2" Header="Start Dato" Width="SizeToHeader">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <DatePicker SelectedDate="{Binding StartDato, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTemplateColumn x:Name="slutDatoColumn2" Header="Slut Dato" Width="SizeToHeader">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <DatePicker SelectedDate="{Binding SlutDato, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTextColumn x:Name="maxDeltagereColumn2" Binding="{Binding MaxDeltagere}" Header="Max Deltagere" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="transportoerColumn2" Binding="{Binding Transportoer}" Header="Transportoer" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="prisPrDeltagerColumn2" Binding="{Binding PrisPrDeltager}" Header="Pris Pr Deltager" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="rejseTilmeldingerColumn2" Binding="{Binding RejseTilmeldinger}" Header="Rejse Tilmeldinger" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="beskrivelseColumn2" Binding="{Binding Beskrivelse}" Header="Beskrivelse" Width="SizeToHeader"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Fremtidige Arrangementer">
+                            <Grid>
+                                <DataGrid x:Name="rejsearrangementerDataGrid3" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource rejsearrangementerViewSource}}" Margin="10,10,9.6,10" RowDetailsVisibilityMode="VisibleWhenSelected">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn x:Name="idColumn7" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="titelColumn3" Binding="{Binding Titel}" Header="Titel" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="byColumn3" Binding="{Binding By}" Header="By" Width="SizeToHeader"/>
+                                        <DataGridTemplateColumn x:Name="startDatoColumn3" Header="Start Dato" Width="SizeToHeader">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <DatePicker SelectedDate="{Binding StartDato, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTemplateColumn x:Name="slutDatoColumn3" Header="Slut Dato" Width="SizeToHeader">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <DatePicker SelectedDate="{Binding SlutDato, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTextColumn x:Name="maxDeltagereColumn3" Binding="{Binding MaxDeltagere}" Header="Max Deltagere" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="transportoerColumn3" Binding="{Binding Transportoer}" Header="Transportoer" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="prisPrDeltagerColumn3" Binding="{Binding PrisPrDeltager}" Header="Pris Pr Deltager" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="rejseTilmeldingerColumn3" Binding="{Binding RejseTilmeldinger}" Header="Rejse Tilmeldinger" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="beskrivelseColumn3" Binding="{Binding Beskrivelse}" Header="Beskrivelse" Width="SizeToHeader"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

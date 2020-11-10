@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VikingRejserEksamenModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Kunder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Navn" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Adresse" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="TelefonNr" Type="varchar" MaxLength="8" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rejsearrangementer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Titel" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="By" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="StartDato" Type="date" Nullable="false" />
+    <Property Name="SlutDato" Type="date" Nullable="false" />
+    <Property Name="MaxDeltagere" Type="int" />
+    <Property Name="Transportoer" Type="int" />
+    <Property Name="PrisPrDeltager" Type="money" Nullable="false" />
+    <Property Name="RejseTilmeldinger" Type="int" Nullable="false" />
+    <Property Name="Beskrivelse" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RejseTilmeldinger">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Kunde" Type="int" Nullable="false" />
+    <Property Name="Rejse" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Transportoer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Navn" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Adresse" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="TelefonNr" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Bemaerkninger" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Rejsearra__Trans__2B3F6F97">
+    <End Role="Transportoer" Type="Self.Transportoer" Multiplicity="0..1" />
+    <End Role="Rejsearrangementer" Type="Self.Rejsearrangementer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transportoer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rejsearrangementer">
+        <PropertyRef Name="Transportoer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RejseTilm__Kunde__2C3393D0">
+    <End Role="Kunder" Type="Self.Kunder" Multiplicity="1" />
+    <End Role="RejseTilmeldinger" Type="Self.RejseTilmeldinger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kunder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RejseTilmeldinger">
+        <PropertyRef Name="Kunde" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RejseTilm__Rejse__2D27B809">
+    <End Role="Rejsearrangementer" Type="Self.Rejsearrangementer" Multiplicity="1" />
+    <End Role="RejseTilmeldinger" Type="Self.RejseTilmeldinger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rejsearrangementer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RejseTilmeldinger">
+        <PropertyRef Name="Rejse" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="VikingRejserEksamenModelStoreContainer">
+    <EntitySet Name="Kunder" EntityType="Self.Kunder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rejsearrangementer" EntityType="Self.Rejsearrangementer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RejseTilmeldinger" EntityType="Self.RejseTilmeldinger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Transportoer" EntityType="Self.Transportoer" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Rejsearra__Trans__2B3F6F97" Association="Self.FK__Rejsearra__Trans__2B3F6F97">
+      <End Role="Transportoer" EntitySet="Transportoer" />
+      <End Role="Rejsearrangementer" EntitySet="Rejsearrangementer" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RejseTilm__Kunde__2C3393D0" Association="Self.FK__RejseTilm__Kunde__2C3393D0">
+      <End Role="Kunder" EntitySet="Kunder" />
+      <End Role="RejseTilmeldinger" EntitySet="RejseTilmeldinger" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RejseTilm__Rejse__2D27B809" Association="Self.FK__RejseTilm__Rejse__2D27B809">
+      <End Role="Rejsearrangementer" EntitySet="Rejsearrangementer" />
+      <End Role="RejseTilmeldinger" EntitySet="RejseTilmeldinger" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

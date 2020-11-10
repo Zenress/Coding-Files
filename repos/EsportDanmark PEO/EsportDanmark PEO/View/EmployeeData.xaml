@@ -38,12 +38,9 @@
                         <DataGrid.ItemContainerStyle>
                             <Style TargetType="DataGridRow">
                                 <Style.Triggers>
-                                    <DataTrigger Binding="{Binding JobType}"  Value="Secretary">
-                                        <Setter Property="Visibility" Value="Collapsed"/>
-                                    </DataTrigger>
-                                    <DataTrigger Binding="{Binding JobType}"  Value="Manager">
-                                        <Setter Property="Visibility" Value="Collapsed"/>
-                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding JobType}"  Value="Judge">
+                                        <Setter Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>                                    
                                 </Style.Triggers>
                             </Style>
                         </DataGrid.ItemContainerStyle>
