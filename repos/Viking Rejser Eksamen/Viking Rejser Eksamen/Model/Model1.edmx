@@ -26,7 +26,7 @@
           <Property Name="MaxDeltagere" Type="int" />
           <Property Name="Transportoer" Type="int" />
           <Property Name="PrisPrDeltager" Type="money" Nullable="false" />
-          <Property Name="RejseTilmeldinger" Type="int" Nullable="false" />
+          <Property Name="RejseTilmeldinger" Type="int" />
           <Property Name="Beskrivelse" Type="varchar(max)" Nullable="false" />
         </EntityType>
         <EntityType Name="RejseTilmeldinger">
@@ -128,7 +128,7 @@
           <Property Name="MaxDeltagere" Type="Int32" />
           <Property Name="Transportoer" Type="Int32" />
           <Property Name="PrisPrDeltager" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-          <Property Name="RejseTilmeldinger" Type="Int32" Nullable="false" />
+          <Property Name="RejseTilmeldinger" Type="Int32" />
           <Property Name="Beskrivelse" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Transportoer1" Relationship="Self.FK__Rejsearra__Trans__2B3F6F97" FromRole="Rejsearrangementer" ToRole="Transportoer" />
           <NavigationProperty Name="RejseTilmeldinger1" Relationship="Self.FK__RejseTilm__Rejse__2D27B809" FromRole="Rejsearrangementer" ToRole="RejseTilmeldinger" />

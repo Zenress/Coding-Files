@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VikingRejserEksamenModelStoreContainer" CdmEntityContainer="VikingRejserEksamenEntities">
+    <EntitySetMapping Name="Kunder">
+      <EntityTypeMapping TypeName="VikingRejserEksamenModel.Kunder">
+        <MappingFragment StoreEntitySet="Kunder">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Navn" ColumnName="Navn" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+          <ScalarProperty Name="TelefonNr" ColumnName="TelefonNr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rejsearrangementer">
+      <EntityTypeMapping TypeName="VikingRejserEksamenModel.Rejsearrangementer">
+        <MappingFragment StoreEntitySet="Rejsearrangementer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Titel" ColumnName="Titel" />
+          <ScalarProperty Name="By" ColumnName="By" />
+          <ScalarProperty Name="StartDato" ColumnName="StartDato" />
+          <ScalarProperty Name="SlutDato" ColumnName="SlutDato" />
+          <ScalarProperty Name="MaxDeltagere" ColumnName="MaxDeltagere" />
+          <ScalarProperty Name="Transportoer" ColumnName="Transportoer" />
+          <ScalarProperty Name="PrisPrDeltager" ColumnName="PrisPrDeltager" />
+          <ScalarProperty Name="RejseTilmeldinger" ColumnName="RejseTilmeldinger" />
+          <ScalarProperty Name="Beskrivelse" ColumnName="Beskrivelse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RejseTilmeldinger">
+      <EntityTypeMapping TypeName="VikingRejserEksamenModel.RejseTilmeldinger">
+        <MappingFragment StoreEntitySet="RejseTilmeldinger">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Kunde" ColumnName="Kunde" />
+          <ScalarProperty Name="Rejse" ColumnName="Rejse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transportoer">
+      <EntityTypeMapping TypeName="VikingRejserEksamenModel.Transportoer">
+        <MappingFragment StoreEntitySet="Transportoer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Navn" ColumnName="Navn" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+          <ScalarProperty Name="TelefonNr" ColumnName="TelefonNr" />
+          <ScalarProperty Name="Bemaerkninger" ColumnName="Bemaerkninger" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

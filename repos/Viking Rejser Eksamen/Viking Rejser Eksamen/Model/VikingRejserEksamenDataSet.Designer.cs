@@ -980,7 +980,6 @@ namespace Viking_Rejser_Eksamen.Model {
                 this.columnStartDato.AllowDBNull = false;
                 this.columnSlutDato.AllowDBNull = false;
                 this.columnPrisPrDeltager.AllowDBNull = false;
-                this.columnRejseTilmeldinger.AllowDBNull = false;
                 this.columnBeskrivelse.AllowDBNull = false;
                 this.columnBeskrivelse.MaxLength = 2147483647;
             }
@@ -1919,7 +1918,13 @@ namespace Viking_Rejser_Eksamen.Model {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int RejseTilmeldinger {
                 get {
-                    return ((int)(this[this.tableRejsearrangementer.RejseTilmeldingerColumn]));
+                    try {
+                        return ((int)(this[this.tableRejsearrangementer.RejseTilmeldingerColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RejseTilmeldinger\' in table \'Rejsearrangementer\' is DBNull." +
+                                "", e);
+                    }
                 }
                 set {
                     this[this.tableRejsearrangementer.RejseTilmeldingerColumn] = value;
@@ -1970,6 +1975,18 @@ namespace Viking_Rejser_Eksamen.Model {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetTransportoerNull() {
                 this[this.tableRejsearrangementer.TransportoerColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsRejseTilmeldingerNull() {
+                return this.IsNull(this.tableRejsearrangementer.RejseTilmeldingerColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetRejseTilmeldingerNull() {
+                this[this.tableRejsearrangementer.RejseTilmeldingerColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2786,7 +2803,7 @@ SELECT Id, Navn, Adresse, TelefonNr FROM Kunder WHERE (Id = @Id)";
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Rejsearrangementer] WHERE (([Id] = @Original_Id) AND ([Titel] = @Original_Titel) AND ([By] = @Original_By) AND ([StartDato] = @Original_StartDato) AND ([SlutDato] = @Original_SlutDato) AND ((@IsNull_MaxDeltagere = 1 AND [MaxDeltagere] IS NULL) OR ([MaxDeltagere] = @Original_MaxDeltagere)) AND ((@IsNull_Transportoer = 1 AND [Transportoer] IS NULL) OR ([Transportoer] = @Original_Transportoer)) AND ([PrisPrDeltager] = @Original_PrisPrDeltager) AND ([RejseTilmeldinger] = @Original_RejseTilmeldinger))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Rejsearrangementer] WHERE (([Id] = @Original_Id) AND ([Titel] = @Original_Titel) AND ([By] = @Original_By) AND ([StartDato] = @Original_StartDato) AND ([SlutDato] = @Original_SlutDato) AND ((@IsNull_MaxDeltagere = 1 AND [MaxDeltagere] IS NULL) OR ([MaxDeltagere] = @Original_MaxDeltagere)) AND ((@IsNull_Transportoer = 1 AND [Transportoer] IS NULL) OR ([Transportoer] = @Original_Transportoer)) AND ([PrisPrDeltager] = @Original_PrisPrDeltager) AND ((@IsNull_RejseTilmeldinger = 1 AND [RejseTilmeldinger] IS NULL) OR ([RejseTilmeldinger] = @Original_RejseTilmeldinger)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Titel", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Titel", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -2798,6 +2815,7 @@ SELECT Id, Navn, Adresse, TelefonNr FROM Kunder WHERE (Id = @Id)";
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Transportoer", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Transportoer", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Transportoer", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Transportoer", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PrisPrDeltager", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PrisPrDeltager", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_RejseTilmeldinger", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RejseTilmeldinger", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RejseTilmeldinger", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RejseTilmeldinger", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
@@ -2815,7 +2833,7 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Beskrivelse", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Beskrivelse", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Rejsearrangementer] SET [Titel] = @Titel, [By] = @By, [StartDato] = @StartDato, [SlutDato] = @SlutDato, [MaxDeltagere] = @MaxDeltagere, [Transportoer] = @Transportoer, [PrisPrDeltager] = @PrisPrDeltager, [RejseTilmeldinger] = @RejseTilmeldinger, [Beskrivelse] = @Beskrivelse WHERE (([Id] = @Original_Id) AND ([Titel] = @Original_Titel) AND ([By] = @Original_By) AND ([StartDato] = @Original_StartDato) AND ([SlutDato] = @Original_SlutDato) AND ((@IsNull_MaxDeltagere = 1 AND [MaxDeltagere] IS NULL) OR ([MaxDeltagere] = @Original_MaxDeltagere)) AND ((@IsNull_Transportoer = 1 AND [Transportoer] IS NULL) OR ([Transportoer] = @Original_Transportoer)) AND ([PrisPrDeltager] = @Original_PrisPrDeltager) AND ([RejseTilmeldinger] = @Original_RejseTilmeldinger));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Rejsearrangementer] SET [Titel] = @Titel, [By] = @By, [StartDato] = @StartDato, [SlutDato] = @SlutDato, [MaxDeltagere] = @MaxDeltagere, [Transportoer] = @Transportoer, [PrisPrDeltager] = @PrisPrDeltager, [RejseTilmeldinger] = @RejseTilmeldinger, [Beskrivelse] = @Beskrivelse WHERE (([Id] = @Original_Id) AND ([Titel] = @Original_Titel) AND ([By] = @Original_By) AND ([StartDato] = @Original_StartDato) AND ([SlutDato] = @Original_SlutDato) AND ((@IsNull_MaxDeltagere = 1 AND [MaxDeltagere] IS NULL) OR ([MaxDeltagere] = @Original_MaxDeltagere)) AND ((@IsNull_Transportoer = 1 AND [Transportoer] IS NULL) OR ([Transportoer] = @Original_Transportoer)) AND ([PrisPrDeltager] = @Original_PrisPrDeltager) AND ((@IsNull_RejseTilmeldinger = 1 AND [RejseTilmeldinger] IS NULL) OR ([RejseTilmeldinger] = @Original_RejseTilmeldinger)));
 SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrDeltager, RejseTilmeldinger, Beskrivelse FROM Rejsearrangementer WHERE (Id = @Id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Titel", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Titel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2837,6 +2855,7 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Transportoer", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Transportoer", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Transportoer", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Transportoer", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PrisPrDeltager", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PrisPrDeltager", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_RejseTilmeldinger", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RejseTilmeldinger", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RejseTilmeldinger", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RejseTilmeldinger", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -2916,7 +2935,7 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id, string Original_Titel, string Original_By, System.DateTime Original_StartDato, System.DateTime Original_SlutDato, global::System.Nullable<int> Original_MaxDeltagere, global::System.Nullable<int> Original_Transportoer, decimal Original_PrisPrDeltager, int Original_RejseTilmeldinger) {
+        public virtual int Delete(int Original_Id, string Original_Titel, string Original_By, System.DateTime Original_StartDato, System.DateTime Original_SlutDato, global::System.Nullable<int> Original_MaxDeltagere, global::System.Nullable<int> Original_Transportoer, decimal Original_PrisPrDeltager, global::System.Nullable<int> Original_RejseTilmeldinger) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
             if ((Original_Titel == null)) {
                 throw new global::System.ArgumentNullException("Original_Titel");
@@ -2949,7 +2968,14 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             this.Adapter.DeleteCommand.Parameters[9].Value = ((decimal)(Original_PrisPrDeltager));
-            this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_RejseTilmeldinger));
+            if ((Original_RejseTilmeldinger.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((int)(Original_RejseTilmeldinger.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2970,7 +2996,7 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Titel, string By, System.DateTime StartDato, System.DateTime SlutDato, global::System.Nullable<int> MaxDeltagere, global::System.Nullable<int> Transportoer, decimal PrisPrDeltager, int RejseTilmeldinger, string Beskrivelse) {
+        public virtual int Insert(string Titel, string By, System.DateTime StartDato, System.DateTime SlutDato, global::System.Nullable<int> MaxDeltagere, global::System.Nullable<int> Transportoer, decimal PrisPrDeltager, global::System.Nullable<int> RejseTilmeldinger, string Beskrivelse) {
             if ((Titel == null)) {
                 throw new global::System.ArgumentNullException("Titel");
             }
@@ -2998,7 +3024,12 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             this.Adapter.InsertCommand.Parameters[6].Value = ((decimal)(PrisPrDeltager));
-            this.Adapter.InsertCommand.Parameters[7].Value = ((int)(RejseTilmeldinger));
+            if ((RejseTilmeldinger.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(RejseTilmeldinger.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
             if ((Beskrivelse == null)) {
                 throw new global::System.ArgumentNullException("Beskrivelse");
             }
@@ -3033,7 +3064,7 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
                     global::System.Nullable<int> MaxDeltagere, 
                     global::System.Nullable<int> Transportoer, 
                     decimal PrisPrDeltager, 
-                    int RejseTilmeldinger, 
+                    global::System.Nullable<int> RejseTilmeldinger, 
                     string Beskrivelse, 
                     int Original_Id, 
                     string Original_Titel, 
@@ -3043,7 +3074,7 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
                     global::System.Nullable<int> Original_MaxDeltagere, 
                     global::System.Nullable<int> Original_Transportoer, 
                     decimal Original_PrisPrDeltager, 
-                    int Original_RejseTilmeldinger, 
+                    global::System.Nullable<int> Original_RejseTilmeldinger, 
                     int Id) {
             if ((Titel == null)) {
                 throw new global::System.ArgumentNullException("Titel");
@@ -3072,7 +3103,12 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[6].Value = ((decimal)(PrisPrDeltager));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(RejseTilmeldinger));
+            if ((RejseTilmeldinger.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(RejseTilmeldinger.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
             if ((Beskrivelse == null)) {
                 throw new global::System.ArgumentNullException("Beskrivelse");
             }
@@ -3111,8 +3147,15 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
                 this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[18].Value = ((decimal)(Original_PrisPrDeltager));
-            this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(Original_RejseTilmeldinger));
-            this.Adapter.UpdateCommand.Parameters[20].Value = ((int)(Id));
+            if ((Original_RejseTilmeldinger.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((int)(Original_RejseTilmeldinger.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[21].Value = ((int)(Id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -3141,7 +3184,7 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
                     global::System.Nullable<int> MaxDeltagere, 
                     global::System.Nullable<int> Transportoer, 
                     decimal PrisPrDeltager, 
-                    int RejseTilmeldinger, 
+                    global::System.Nullable<int> RejseTilmeldinger, 
                     string Beskrivelse, 
                     int Original_Id, 
                     string Original_Titel, 
@@ -3151,7 +3194,7 @@ SELECT Id, Titel, [By], StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrD
                     global::System.Nullable<int> Original_MaxDeltagere, 
                     global::System.Nullable<int> Original_Transportoer, 
                     decimal Original_PrisPrDeltager, 
-                    int Original_RejseTilmeldinger) {
+                    global::System.Nullable<int> Original_RejseTilmeldinger) {
             return this.Update(Titel, By, StartDato, SlutDato, MaxDeltagere, Transportoer, PrisPrDeltager, RejseTilmeldinger, Beskrivelse, Original_Id, Original_Titel, Original_By, Original_StartDato, Original_SlutDato, Original_MaxDeltagere, Original_Transportoer, Original_PrisPrDeltager, Original_RejseTilmeldinger, Original_Id);
         }
     }

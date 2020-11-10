@@ -28,7 +28,7 @@ namespace Viking_Rejser_Eksamen.Model
         public Nullable<int> MaxDeltagere { get; set; }
         public Nullable<int> Transportoer { get; set; }
         public decimal PrisPrDeltager { get; set; }
-        public int RejseTilmeldinger { get; set; }
+        public Nullable<int> RejseTilmeldinger { get; set; }
         public string Beskrivelse { get; set; }
     
         public virtual Transportoer Transportoer1 { get; set; }

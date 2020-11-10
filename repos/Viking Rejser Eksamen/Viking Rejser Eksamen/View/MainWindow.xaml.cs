@@ -21,12 +21,11 @@ namespace Viking_Rejser_Eksamen
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly MainWindowViewModel viewModel;
+        private readonly MainWindowViewModel viewModel;        
         public MainWindow()
         {
             InitializeComponent();
-            viewModel = new MainWindowViewModel(this);
-            
+            viewModel = new MainWindowViewModel(this);            
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -48,6 +47,16 @@ namespace Viking_Rejser_Eksamen
             vikingRejserEksamenDataSetRejsearrangementerTableAdapter.Fill(vikingRejserEksamenDataSet.Rejsearrangementer);
             CollectionViewSource rejsearrangementerViewSource = (CollectionViewSource)this.FindResource("rejsearrangementerViewSource");
             rejsearrangementerViewSource.View.MoveCurrentToFirst();
+        }        
+
+        private void newRejseBtn_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.OpenNewRejseWindow();
+        }
+
+        private void newTilmeldingBtn_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.OpenNewEnrollmentWindow();
         }
     }
 }

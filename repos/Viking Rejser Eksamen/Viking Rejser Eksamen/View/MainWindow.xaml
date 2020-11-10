@@ -22,7 +22,7 @@
                         <ColumnDefinition Width="301*"/>
                         <ColumnDefinition Width="487*"/>
                     </Grid.ColumnDefinitions>
-                    <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding}">
+                    <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding Mode=OneWay}">
                         <TabItem Header="Alle Kunder">
                             <DataGrid x:Name="kunderDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="10,10,9.2,70" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" Grid.Column="1">
                                 <DataGrid.Columns>
@@ -90,7 +90,9 @@
                         <ColumnDefinition Width="301*"/>
                         <ColumnDefinition Width="487*"/>
                     </Grid.ColumnDefinitions>
-                    <TabControl Grid.Column="1" Margin="0.2,0,0,0">
+                    <Button x:Name="newRejseBtn" Content="Ny Rejse" Margin="91,46,102.8,310" Click="newRejseBtn_Click"/>
+                    <Button x:Name="newTilmeldingBtn" Content="Ny Tilmelding" Margin="91,100,102.8,256" Click="newTilmeldingBtn_Click"/>
+                    <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding Mode=OneWay}">
                         <TabItem Header="Alle Rejser">
                             <Grid>
                                 <DataGrid x:Name="rejsearrangementerDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource rejsearrangementerViewSource}}" Margin="0,0,-0.4,0" RowDetailsVisibilityMode="VisibleWhenSelected">

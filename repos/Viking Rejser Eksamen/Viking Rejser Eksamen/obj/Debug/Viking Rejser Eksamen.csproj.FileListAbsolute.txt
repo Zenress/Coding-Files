@@ -20,3 +20,11 @@ C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\D
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csproj.CopyComplete
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\App.g.cs
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyKunde.g.cs
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyRejse.g.cs
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTilmelding.g.cs
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportør.g.cs
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyKunde.baml
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyRejse.baml
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTilmelding.baml
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportør.baml
