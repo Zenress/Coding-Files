@@ -16,7 +16,7 @@
         <TextBox x:Name="KundeNavn" Height="23" Margin="55,52,55,0" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top" Grid.Column="1"/>
         <TextBox x:Name="KundeAdresse" Height="23" Margin="55,87,55,0" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" Grid.Column="1"/>
         <TextBox x:Name="KundeTlfNr" Height="23" Margin="55,122,55,0" TextWrapping="Wrap" Text="Telefon Nummer" VerticalAlignment="Top" Grid.Column="1"/>
-        <Button x:Name="RejseCreate" Content="Create" Margin="78,160,78,0" VerticalAlignment="Top" Width="74" Click="RejseCreate_Click" Grid.Column="1"/>
+        <Button x:Name="KundeCreate" Content="Create" Margin="78,160,78,0" VerticalAlignment="Top" Width="74" Click="KundeCreate_Click" Grid.Column="1"/>
 
     </Grid>
 </Window>

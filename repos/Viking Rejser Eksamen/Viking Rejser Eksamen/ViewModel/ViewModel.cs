@@ -41,7 +41,7 @@ namespace Viking_Rejser_Eksamen.ViewModel
         {
             NyTilmelding newWindow = new NyTilmelding();
             newWindow.ShowDialog();
-        }        
+        }     
     }
     #endregion
     #region Rejse ViewModel Region
@@ -112,9 +112,9 @@ namespace Viking_Rejser_Eksamen.ViewModel
                 };
                 _rejseDb.Transportoer.Add(nyTransportør);
 
-                MainWindow.transportoerDataGrid.ItemsSource = _rejseDb.Transportoer.ToList();
 
                 _rejseDb.SaveChanges();
+                MainWindow.transportoerDataGrid.ItemsSource = _rejseDb.Transportoer.ToList();
                 Window.Hide();
             }
             catch (FormatException)
@@ -149,9 +149,9 @@ namespace Viking_Rejser_Eksamen.ViewModel
                 };
                 _rejseDb.Kunder.Add(nyKunde);
 
-                MainWindow.kunderDataGrid.ItemsSource = _rejseDb.Kunder.ToList();
 
                 _rejseDb.SaveChanges();
+                MainWindow.kunderDataGrid.ItemsSource = _rejseDb.Kunder.ToList();
                 Window.Hide();
             }
             catch (FormatException)

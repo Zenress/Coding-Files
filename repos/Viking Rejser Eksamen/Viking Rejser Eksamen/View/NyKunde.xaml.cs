@@ -27,9 +27,9 @@ namespace Viking_Rejser_Eksamen.View
             viewModel = new NyKundeViewModel(this, mainWindow);
         }
 
-        private void RejseCreate_Click(object sender, RoutedEventArgs e)
+        private void KundeCreate_Click(object sender, RoutedEventArgs e)
         {
-
+            viewModel.NewCustomer();
         }
     }
 }
