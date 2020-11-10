@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Viking_Rejser_Eksamen.View"
+        xmlns:Model="clr-namespace:Viking_Rejser_Eksamen.Model" x:Class="Viking_Rejser_Eksamen.View.Tilmeldinger"
+        mc:Ignorable="d"
+        Title="Tilmeldinger" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Model:VikingRejserEksamenDataSet x:Key="vikingRejserEksamenDataSet"/>
+        <CollectionViewSource x:Key="rejseTilmeldingerViewSource" Source="{Binding RejseTilmeldinger,Source={StaticResource vikingRejserEksamenDataSet}}"/>
+        <CollectionViewSource x:Key="kundeIdViewSource" Source="{Binding Kunder, Source={StaticResource vikingRejserEksamenDataSet}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource rejseTilmeldingerViewSource}">
+        <DataGrid x:Name="rejseTilmeldingerDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="10,10,10,64" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="idColumn" Width="SizeToHeader" IsReadOnly="True" Header="Id" Binding="{Binding Id}"/>                
+                <DataGridTextColumn x:Name="kundeNavn" Width="SizeToHeader" Header="Kunde Navn" Binding="{Binding Navn}"/>
+                <DataGridTextColumn x:Name="rejseTitel" Width="SizeToHeader" Header="Rejse Navn" Binding="{Binding Navn}"/>
+                <DataGridTextColumn x:Name="kundeNummer" Width="SizeToHeader" Header="Kunde TelefonNr" Binding="{Binding Navn}"/>
+                <DataGridTextColumn x:Name="rejseBy" Width="SizeToHeader" Header="Rejse By" Binding="{Binding Navn}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Viking_Rejser_Eksamen"
         xmlns:Model="clr-namespace:Viking_Rejser_Eksamen.Model" x:Class="Viking_Rejser_Eksamen.MainWindow"
         mc:Ignorable="d"
-        Title="Viking Rejser" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="Viking Rejser" Height="450" Width="900.074" Loaded="Window_Loaded">
     <Window.Resources>
         <Model:VikingRejserEksamenDataSet x:Key="vikingRejserEksamenDataSet"/>
         <CollectionViewSource x:Key="kunderViewSource" Source="{Binding Kunder, Source={StaticResource vikingRejserEksamenDataSet}}"/>
@@ -19,11 +19,11 @@
             <TabItem Header="Kunder">
                 <Grid DataContext="{StaticResource kunderViewSource}">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="301*"/>
-                        <ColumnDefinition Width="487*"/>
+                        <ColumnDefinition Width="67*"/>
+                        <ColumnDefinition Width="195*"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="NewKundeBtn" Content="Ny Kunde" HorizontalAlignment="Left" Margin="102,46,0,0" VerticalAlignment="Top" Width="83" Height="33" Click="NewKundeBtn_Click"/>
-                    <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding Mode=OneWay}">
+                    <Button x:Name="NewKundeBtn" Content="Ny Kunde" HorizontalAlignment="Left" Margin="57,30,0,0" VerticalAlignment="Top" Width="83" Height="33" Click="NewKundeBtn_Click"/>
+                    <TabControl Grid.Column="1" SelectedIndex="{Binding Mode=OneWay}">
                         <TabItem Header="Alle Kunder">
                             <DataGrid x:Name="kunderDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="10,10,9.2,70" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" Grid.Column="1">
                                 <DataGrid.Columns>
@@ -52,10 +52,19 @@
             <TabItem Header="Transportør">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="301*"/>
-                        <ColumnDefinition Width="487*"/>
+                        <ColumnDefinition Width="67*"/>
+                        <ColumnDefinition Width="195*"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="NewTBtn" Content="Ny Transportør" Margin="89,44,105,310" Click="NewTBtn_Click"/>
+                    <Button x:Name="NewTBtn" Content="Ny Transportør" Margin="49,26,0,328" Click="NewTBtn_Click" HorizontalAlignment="Left" Width="98" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0.276"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                    </Button>
                     <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding Mode=OneWay}">
                         <TabItem Header="Alle Transportører">
                             <Grid DataContext="{StaticResource transportoerViewSource}">
@@ -89,15 +98,15 @@
             <TabItem Header="Rejsearrangementer">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="301*"/>
-                        <ColumnDefinition Width="487*"/>
+                        <ColumnDefinition Width="67*"/>
+                        <ColumnDefinition Width="195*"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="newRejseBtn" Content="Ny Rejse" Margin="91,46,102.8,310" Click="newRejseBtn_Click"/>
-                    <Button x:Name="newTilmeldingBtn" Content="Ny Tilmelding" Margin="91,100,102.8,256" Click="newTilmeldingBtn_Click"/>
-                    <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding Mode=OneWay}">
+                    <Button x:Name="newRejseBtn" Content="Ny Rejse" Margin="66,39,73,317" Click="newRejseBtn_Click"/>
+                    <Button x:Name="newTilmeldingBtn" Content="Ny Tilmelding" Margin="66,100,73,256" Click="newTilmeldingBtn_Click"/>
+                    <TabControl Grid.Column="1" SelectedIndex="{Binding Mode=OneWay}">
                         <TabItem Header="Alle Rejser">
                             <Grid>
-                                <DataGrid x:Name="rejsearrangementerDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource rejsearrangementerViewSource}}" Margin="0,0,-0.4,0" RowDetailsVisibilityMode="VisibleWhenSelected">
+                                <DataGrid x:Name="rejsearrangementerDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource rejsearrangementerViewSource}}" Margin="10" RowDetailsVisibilityMode="VisibleWhenSelected">
                                     <DataGrid.Columns>
                                         <DataGridTextColumn x:Name="idColumn4" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
                                         <DataGridTextColumn x:Name="titelColumn" Binding="{Binding Titel}" Header="Titel" Width="SizeToHeader"/>
@@ -118,8 +127,27 @@
                                         </DataGridTemplateColumn>
                                         <DataGridTextColumn x:Name="maxDeltagereColumn" Binding="{Binding MaxDeltagere}" Header="Max Deltagere" Width="SizeToHeader"/>
                                         <DataGridTextColumn x:Name="transportoerColumn" Binding="{Binding Transportoer}" Header="Transportoer" Width="SizeToHeader"/>
-                                        <DataGridTextColumn x:Name="prisPrDeltagerColumn" Binding="{Binding PrisPrDeltager}" Header="Pris Pr Deltager" Width="SizeToHeader"/>
-                                        <DataGridTextColumn x:Name="rejseTilmeldingerColumn" Binding="{Binding RejseTilmeldinger}" Header="Rejse Tilmeldinger" Width="SizeToHeader"/>
+                                        <DataGridTextColumn x:Name="prisPrDeltagerColumn" Binding="{Binding PrisPrDeltager}" Header="Pris Pr." Width="SizeToHeader"/>
+                                        <DataGridTemplateColumn Width="SizeToHeader">
+                                            <DataGridTemplateColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Tilmdeldinger"/>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.HeaderTemplate>
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                        <Button x:Name="TilmeldingerBtn" Content="Check" Click="TilmdeldingerBtn_Click" FontFamily="Arial" HorizontalAlignment="Left" Width="70">
+                                                            <Button.Resources>
+                                                                <Style TargetType="Border">
+                                                                    <Setter Property="CornerRadius" Value="5"/>
+                                                                </Style>
+                                                            </Button.Resources>
+                                                        </Button>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
                                         <DataGridTextColumn x:Name="beskrivelseColumn" Binding="{Binding Beskrivelse}" Header="Beskrivelse" Width="SizeToHeader"/>
                                     </DataGrid.Columns>
                                     <DataGrid.RowDetailsTemplate>

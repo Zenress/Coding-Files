@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Viking_Rejser_Eksamen.View"
         mc:Ignorable="d"
-        Title="NyTilmelding" Height="450" Width="800">
+        Title="NyTilmelding" Height="450" Width="350">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="230"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Tilmeld Kunde" Grid.Column="1" HorizontalAlignment="Left" Margin="72,22,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="KundeId" Grid.Column="1" HorizontalAlignment="Left" Margin="56,72,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="RejseId" Grid.Column="1" HorizontalAlignment="Left" Margin="56,123,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="RejseTilmeldingCreate" Content="Create" Grid.Column="1" Margin="77,157,78,0" VerticalAlignment="Top" Width="75" Click="RejseCreate_Click"/>
+        <Label Content="Kunde Navn" Grid.Column="1" HorizontalAlignment="Left" Margin="76,49,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rejse Navn" Grid.Column="1" HorizontalAlignment="Left" Margin="78,101,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

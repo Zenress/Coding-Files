@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using Viking_Rejser_Eksamen.Model;
 using Viking_Rejser_Eksamen.View;
 
@@ -42,6 +43,12 @@ namespace Viking_Rejser_Eksamen.ViewModel
             NyTilmelding newWindow = new NyTilmelding();
             newWindow.ShowDialog();
         }     
+
+        public void OpenEnrollmentWindow()
+        {
+            Tilmeldinger newWindow = new Tilmeldinger();
+            newWindow.ShowDialog();
+        }
     }
     #endregion
     #region Rejse ViewModel Region
@@ -159,6 +166,61 @@ namespace Viking_Rejser_Eksamen.ViewModel
 
                 throw;
             }
+        }
+    }
+    #endregion
+    #region Tilmelding ViewModel Class
+    class NyTilmeldingViewModel
+    {
+        VikingRejserEksamenEntities _rejseDb = new VikingRejserEksamenEntities();
+        public NyTilmelding Window { get; set; }
+        public MainWindow MainWindow { get; set; }
+        public NyTilmeldingViewModel(NyTilmelding window, MainWindow mainWindow)
+        {
+            Window = window;
+            MainWindow = mainWindow;
+        }
+
+        public void NewEnrollment()
+        {
+            try
+            {
+                RejseTilmeldinger nyTilmelding = new RejseTilmeldinger()
+                {
+                    Navn = Window.KundeNavn.Text,
+                    Adresse = Window.KundeAdresse.Text,
+                    TelefonNr = Window.KundeTlfNr.Text
+                };
+                _rejseDb.RejseTilmeldinger.Add(nyTilmelding);
+
+
+                _rejseDb.SaveChanges();
+                MainWindow.kunderDataGrid.ItemsSource = _rejseDb.Kunder.ToList();
+                Window.Hide();
+            }
+            catch (FormatException)
+            {
+
+                throw;
+            }
+        }
+    }
+
+    class Tilmdelding
+    {
+        VikingRejserEksamenEntities _rejseDb = new VikingRejserEksamenEntities();
+        public Tilmeldinger Window { get; set; }
+        public MainWindow MainWindow { get; set; }
+        public Tilmdelding(Tilmeldinger window, MainWindow mainWindow)
+        {
+            Window = window;
+            MainWindow = mainWindow;
+        }
+        //Filling Datagrid based on the selected Rejse
+        public void FillDataGrid()
+        {
+            int id = (Window.rejseTilmeldingerDataGrid.SelectedItem as VikingRejserEksamenEntities.).Id;
+            (Window.rejseTilmeldingerDataGrid.ItemsSource as DataTable).DefaultView.RowFilter = _rejseDb.Rejsearrangementer.Where(selected => selected.Id == id).ToString();
         }
     }
     #endregion

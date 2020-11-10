@@ -68,5 +68,10 @@ namespace Viking_Rejser_Eksamen
         {
             viewModel.OpenNewCustomerWindow();
         }
+
+        private void TilmdeldingerBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
