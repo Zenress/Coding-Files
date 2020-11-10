@@ -106,10 +106,10 @@ namespace Viking_Rejser_Eksamen.ViewModel
                 Transportoer nyTransportør = new Transportoer()
                 {
                     //Making the columns equal the input fields text
-                    Navn = ,
-                    Adresse = ,
-                    TelefonNr = ,
-                    Bemaerkninger = ,                    
+                    Navn = Window.TNavn.Text,
+                    Adresse = Window.TAdresse.Text,
+                    TelefonNr = Window.TTelefonNr.Text,
+                    Bemaerkninger = Window.TBemærkninger.Text,                    
                 };
                 //Adding the new movie to the Movies table
                 _rejseDb.Transportoer.Add(nyTransportør);

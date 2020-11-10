@@ -26,5 +26,10 @@ namespace Viking_Rejser_Eksamen.View
             InitializeComponent();
             viewModel = new NyTransportoerViewModel(this, mainWindow);
         }
+
+        private void RejseCreate_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.NewTransportter();
+        }
     }
 }

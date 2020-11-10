@@ -28,3 +28,4 @@ C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\D
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyRejse.baml
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTilmelding.baml
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportør.baml
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportoer.g.cs

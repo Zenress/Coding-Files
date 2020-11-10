@@ -67,7 +67,7 @@ namespace Viking_Rejser_Eksamen.View {
         
         #line 19 "..\..\..\View\NyTransportoer.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox TBemærkninger;
+        internal System.Windows.Controls.TextBox TTelefonNr;
         
         #line default
         #line hidden
@@ -75,7 +75,15 @@ namespace Viking_Rejser_Eksamen.View {
         
         #line 20 "..\..\..\View\NyTransportoer.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button CreateBtn;
+        internal System.Windows.Controls.TextBox TBemærkninger;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 21 "..\..\..\View\NyTransportoer.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button RejseCreate;
         
         #line default
         #line hidden
@@ -112,12 +120,6 @@ namespace Viking_Rejser_Eksamen.View {
             {
             case 1:
             this.TNavn = ((System.Windows.Controls.TextBox)(target));
-            
-            #line 16 "..\..\..\View\NyTransportoer.xaml"
-            this.TNavn.TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.TNavn_TextChanged);
-            
-            #line default
-            #line hidden
             return;
             case 2:
             this.TAdresse = ((System.Windows.Controls.TextBox)(target));
@@ -126,13 +128,16 @@ namespace Viking_Rejser_Eksamen.View {
             this.TTelefonNr = ((System.Windows.Controls.TextBox)(target));
             return;
             case 4:
-            this.TBemærkninger = ((System.Windows.Controls.TextBox)(target));
+            this.TTelefonNr = ((System.Windows.Controls.TextBox)(target));
             return;
             case 5:
-            this.CreateBtn = ((System.Windows.Controls.Button)(target));
+            this.TBemærkninger = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 6:
+            this.RejseCreate = ((System.Windows.Controls.Button)(target));
             
-            #line 20 "..\..\..\View\NyTransportoer.xaml"
-            this.CreateBtn.Click += new System.Windows.RoutedEventHandler(this.RejseCreate_Click);
+            #line 21 "..\..\..\View\NyTransportoer.xaml"
+            this.RejseCreate.Click += new System.Windows.RoutedEventHandler(this.RejseCreate_Click);
             
             #line default
             #line hidden
