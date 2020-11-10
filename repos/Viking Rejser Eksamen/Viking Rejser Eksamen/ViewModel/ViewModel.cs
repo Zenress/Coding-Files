@@ -101,7 +101,7 @@ namespace Viking_Rejser_Eksamen.ViewModel
 
         public void NewTransportter()
         {
-            try
+          
             {
                 Transportoer nyTransportør = new Transportoer()
                 {
