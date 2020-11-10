@@ -101,20 +101,19 @@ namespace Viking_Rejser_Eksamen.ViewModel
 
         public void NewTransportter()
         {
-          
+            try
             {
                 Transportoer nyTransportør = new Transportoer()
                 {
-                    //Making the columns equal the input fields text
                     Navn = Window.TNavn.Text,
                     Adresse = Window.TAdresse.Text,
                     TelefonNr = Window.TTelefonNr.Text,
                     Bemaerkninger = Window.TBemærkninger.Text,                    
                 };
-                //Adding the new movie to the Movies table
                 _rejseDb.Transportoer.Add(nyTransportør);
-                //Saving the changes made to the database entity
+
                 MainWindow.transportoerDataGrid.ItemsSource = _rejseDb.Transportoer.ToList();
+
                 _rejseDb.SaveChanges();
                 Window.Hide();
             }

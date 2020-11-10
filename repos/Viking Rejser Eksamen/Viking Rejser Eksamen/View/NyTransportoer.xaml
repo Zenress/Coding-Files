@@ -12,8 +12,8 @@
             <ColumnDefinition Width="341*"/>
             <ColumnDefinition Width="60*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Opret ny Rejse" Grid.Column="1" HorizontalAlignment="Left" Margin="83.2,22,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TNavn" Grid.Column="1" Height="23" Margin="67.2,53,64.8,0" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top" TextChanged="TNavn_TextChanged"/>
+        <Label Content="Tilføj ny Transportør" Grid.Column="1" HorizontalAlignment="Left" Margin="68,22,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TNavn" Grid.Column="1" Height="23" Margin="67.2,53,64.8,0" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top" />
         <TextBox x:Name="TAdresse" Grid.Column="1" Height="23" Margin="67.2,88,64.8,0" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top"/>        
         <TextBox x:Name="TTelefonNr" Grid.Column="1" Height="23" Margin="67.2,126,64.8,0" TextWrapping="Wrap" Text="TelefonNr" VerticalAlignment="Top" SpellCheck.IsEnabled="True"/>
         <TextBox x:Name="TBemærkninger" Grid.Column="1" Height="68" Margin="67.2,164,64.8,0" TextWrapping="Wrap" Text="Bemærkninge" VerticalAlignment="Top"/>

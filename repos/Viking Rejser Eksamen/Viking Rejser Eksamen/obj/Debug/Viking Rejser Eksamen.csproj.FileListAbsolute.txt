@@ -29,3 +29,33 @@ C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\D
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTilmelding.baml
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportør.baml
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportoer.g.cs
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csprojAssemblyReference.cache
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\MainWindow.g.cs
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyKunde.g.cs
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyRejse.g.cs
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTilmelding.g.cs
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportoer.g.cs
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\App.g.cs
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen_Content.g.cs
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen_MarkupCompile.cache
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen_MarkupCompile.lref
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.exe
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.pdb
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\bin\Debug\Viking Rejser Eksamen.exe.config
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\bin\Debug\Viking Rejser Eksamen.exe
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\bin\Debug\Viking Rejser Eksamen.pdb
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\bin\Debug\EntityFramework.dll
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\bin\Debug\EntityFramework.xml
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\MainWindow.baml
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyKunde.baml
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyRejse.baml
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTilmelding.baml
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportoer.baml
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.g.resources
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking_Rejser_Eksamen.Properties.Resources.resources
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csproj.GenerateResource.cache
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csproj.CoreCompileInputs.cache
+C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csproj.CopyComplete

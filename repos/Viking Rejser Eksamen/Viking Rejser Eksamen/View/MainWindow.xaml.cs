@@ -58,5 +58,15 @@ namespace Viking_Rejser_Eksamen
         {
             viewModel.OpenNewEnrollmentWindow();
         }
+
+        private void NewTBtn_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.OpenNewTransporterWindow();
+        }
+
+        private void NewKundeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.OpenNewCustomerWindow();
+        }
     }
 }

@@ -22,6 +22,7 @@
                         <ColumnDefinition Width="301*"/>
                         <ColumnDefinition Width="487*"/>
                     </Grid.ColumnDefinitions>
+                    <Button x:Name="NewKundeBtn" Content="Ny Kunde" HorizontalAlignment="Left" Margin="102,46,0,0" VerticalAlignment="Top" Width="83" Height="33"/>
                     <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding Mode=OneWay}">
                         <TabItem Header="Alle Kunder">
                             <DataGrid x:Name="kunderDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="10,10,9.2,70" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" Grid.Column="1">
@@ -54,6 +55,7 @@
                         <ColumnDefinition Width="301*"/>
                         <ColumnDefinition Width="487*"/>
                     </Grid.ColumnDefinitions>
+                    <Button x:Name="NewTBtn" Content="Ny Transportør" Margin="89,44,105,310" Click="NewTBtn_Click"/>
                     <TabControl Grid.Column="1" Margin="0.2,0,0,0" SelectedIndex="{Binding Mode=OneWay}">
                         <TabItem Header="Alle Transportører">
                             <Grid DataContext="{StaticResource transportoerViewSource}">
