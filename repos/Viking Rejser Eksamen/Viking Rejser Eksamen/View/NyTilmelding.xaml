@@ -15,7 +15,7 @@
         <Label Content="Tilmeld Kunde" Grid.Column="1" HorizontalAlignment="Left" Margin="72,22,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="KundeId" Grid.Column="1" HorizontalAlignment="Left" Margin="56,72,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="RejseId" Grid.Column="1" HorizontalAlignment="Left" Margin="56,123,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="RejseTilmeldingCreate" Content="Create" Grid.Column="1" Margin="77,157,78,0" VerticalAlignment="Top" Width="75" Click="RejseCreate_Click"/>
+        <Button x:Name="RejseTilmeldingCreate" Content="Create" Grid.Column="1" Margin="77,157,78,0" VerticalAlignment="Top" Width="75" Click="RejseTilmeldingCreate_Click"/>
         <Label Content="Kunde Navn" Grid.Column="1" HorizontalAlignment="Left" Margin="76,49,0,0" VerticalAlignment="Top"/>
         <Label Content="Rejse Navn" Grid.Column="1" HorizontalAlignment="Left" Margin="78,101,0,0" VerticalAlignment="Top"/>
 

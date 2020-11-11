@@ -52,18 +52,31 @@ Emne 5 Persistente data
 3. Hvad er CRUD?
 - Create, Read, Update, Delete
 4. Jeg kan anvende optimale datatyper til håndtering af SQL
+- Ja, ved at bruge de datatyper der passe til hvilken data der skal stores
 5. Jeg kan anvende en Client / Server software arkitektur
+- 
 6. Jeg kan anvende en webservice / API
+- Jaer, især API som giver Json svar tilbage
 7. Jeg ved hvad Json er
+- Json er en fil format, som bruger text til at oversætte kode og objekter.
 8. Jeg kan håndtere Json fra en webservice (Deserialization)
+- Ja, ved brug af Webrequest og HttpWebResponse og stream samt streamreader kan jeg læse en Json fil og bruge dataen i den.
 9. Jeg kan anvende Normalisation op til 3rd form
+- Ja, og jeg bruger det generelt i alle databaser
 
 Emne 6 QA
 1. Hvad betyder "Try Catch Finally"?
+- Try Catch Finally er en metode som prøver noget kode imens den tjekker om der kommer den exception som du har bedt den om at tjekke. Finally er en del af metoden som er noget den ville gøre uanset om det lykkedes at køre koden eller om der kommer fejl
 2. Jeg ved hvad en Exception betyder
+- Ja, det er en fejl der kommer når noget går galt.
 3. Jeg kan sikre kode ved hjælp af Unit Testing
+- Semi, plejer at bruge user interfacve til test for det meste
 4. Jeg ved hvad AAA betyder (Indenfor Unit Testing)
+- Arrange, Act, Assert
 5. Jeg kan overholde best practice
+- 
 6. Best practice er? (Hvad kræver det?)
-7. Hvad er CamelCase? Hvad er pascalCase? og hvornår bruges det?
+7. Hvad er PascalCase? Hvad er camelCase? og hvornår bruges det?
+- PascalCase er hvor man bruger stort start bogstav til hvert ord. camelCase er når man bruger et småt start bogstav men bruger stort bogstav til alle andre bogstaver. Der er regler for hvornår man skal bruge hvad
 8. Jeg kan udvise Opgaveloyalitet ift. kravspecifikationen (Kunden ved bedst)
+- Kunden ved altid bedst

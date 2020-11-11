@@ -103,6 +103,15 @@
                     </Grid.ColumnDefinitions>
                     <Button x:Name="newRejseBtn" Content="Ny Rejse" Margin="66,39,73,317" Click="newRejseBtn_Click"/>
                     <Button x:Name="newTilmeldingBtn" Content="Ny Tilmelding" Margin="66,100,73,256" Click="newTilmeldingBtn_Click"/>
+                    <Button x:Name="GetWeatherBtn" Content="Tjek Vejr For Rejse" Margin="56,163,62.2,196" Click="GetWeatherBtn_Click"/>
+                    <Label Content="Temperatur:" Margin="33,215,115.2,145"/>
+                    <Label Content="Min. Temperatur:" Margin="33,247,92.2,112"/>
+                    <Label Content="Max. Temperatur:" Margin="33,280,92.2,80"/>
+                    <Label Content="Vejr:" Margin="33,312,152.2,47"/>
+                    <Label x:Name="Temperature" Content="" Margin="112,215,36.2,145"/>
+                    <Label x:Name="MinTemperature" Content="" Margin="112,247,13.2,112"/>
+                    <Label x:Name="MaxTemperature" Content="" Margin="112,280,13.2,80"/>
+                    <Label x:Name="Weather" Content="" Margin="112,312,73.2,47"/>
                     <TabControl Grid.Column="1" SelectedIndex="{Binding Mode=OneWay}">
                         <TabItem Header="Alle Rejser">
                             <Grid>

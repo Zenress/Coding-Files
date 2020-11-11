@@ -20,15 +20,18 @@ namespace Viking_Rejser_Eksamen.View
     /// </summary>
     public partial class NyKunde : Window
     {
+        //Creating a viewModel field for the NyKundeViewModel class, so i can access it's methods
         private readonly NyKundeViewModel viewModel;
         public NyKunde(MainWindow mainWindow)
         {
             InitializeComponent();
+            //Assigning the necessary Windows for the Viewmodel class
             viewModel = new NyKundeViewModel(this, mainWindow);
         }
 
         private void KundeCreate_Click(object sender, RoutedEventArgs e)
         {
+            //Using the NewCustomer method in the Event: KundeCreate_Click
             viewModel.NewCustomer();
         }
     }

@@ -21,16 +21,22 @@ namespace Viking_Rejser_Eksamen
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly MainWindowViewModel viewModel;        
+        //Creating a viewModel field for the MainWindowViewModel class, so i can access it's methods
+        private readonly MainWindowViewModel viewModel;
+        private readonly API api;
         public MainWindow()
         {
             InitializeComponent();
-            viewModel = new MainWindowViewModel(this);            
+            //Assigning the necessary windows for the Viewmodel class
+            viewModel = new MainWindowViewModel(this);
+            api = new API(this);
+            //Using the FillTransportørDataGrid method
+            viewModel.FillTransportørDataGrid();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            //Loading the datagrids with the necessary data
             Model.VikingRejserEksamenDataSet vikingRejserEksamenDataSet = (Model.VikingRejserEksamenDataSet)this.FindResource("vikingRejserEksamenDataSet");
             // Load data into the table Kunder. You can modify this code as needed.
             Model.VikingRejserEksamenDataSetTableAdapters.KunderTableAdapter vikingRejserEksamenDataSetKunderTableAdapter = new Model.VikingRejserEksamenDataSetTableAdapters.KunderTableAdapter();
@@ -51,27 +57,37 @@ namespace Viking_Rejser_Eksamen
 
         private void newRejseBtn_Click(object sender, RoutedEventArgs e)
         {
-            viewModel.OpenNewRejseWindow();
+            //Using the OpenNewVacationWindow method in the Event: newRejseBtn_Click
+            viewModel.OpenNewVacationWindow();
         }
 
         private void newTilmeldingBtn_Click(object sender, RoutedEventArgs e)
         {
+            //Using the OpenNewEnrollmentWindow method in the Event: newTilmeldingBtn_Click
             viewModel.OpenNewEnrollmentWindow();
         }
 
         private void NewTBtn_Click(object sender, RoutedEventArgs e)
         {
+            //Using the OpenNewTransporterWindow method in the Event: NewTbtn_Click
             viewModel.OpenNewTransporterWindow();
         }
 
         private void NewKundeBtn_Click(object sender, RoutedEventArgs e)
         {
+            //Using the OpenNewCustomerWindow method in the Event: NewKundeBtn_Click
             viewModel.OpenNewCustomerWindow();
         }
 
         private void TilmdeldingerBtn_Click(object sender, RoutedEventArgs e)
         {
+            //Using the OpenEnrollmentWindow method in the Event:TilmeldingerBtn_Click
+            viewModel.OpenEnrollmentWindow();
+        }
 
+        private void GetWeatherBtn_Click(object sender, RoutedEventArgs e)
+        {
+            api.FillTemperature();
         }
     }
 }

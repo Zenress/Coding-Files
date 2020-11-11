@@ -58,3 +58,7 @@ C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking 
 C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csproj.CoreCompileInputs.cache
 C:\Users\hotro\Documents\GitHub\Coding-Files\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\Viking Rejser Eksamen.csproj.CopyComplete
 C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\NyTransportoer.baml
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\Tilmeldinger.g.cs
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\obj\Debug\View\Tilmeldinger.baml
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\bin\Debug\Newtonsoft.Json.dll
+C:\Users\shan0382\source\repos\Viking Rejser Eksamen\Viking Rejser Eksamen\bin\Debug\Newtonsoft.Json.xml
