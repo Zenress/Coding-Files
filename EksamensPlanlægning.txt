@@ -1,9 +1,11 @@
 1) Præsentation
-  - 2) Præsenter sig selv
-  - 3) vis program
+  - 2) Præsenter sig selv (Shano, 18 år. Vil rigtig gerne være AI programmør)
+  - 3) Vis program (Overblik over MVVM, MainWindow(Det er hovedvinduet så det er det vigtigste))
   - 4) Vis effekter (buttons osv)
-  - 5) sql / primary and foreign keys / relations / db diagram
-  - 6) c# Models (Ef Diagram) / inheritance
-  - 7) methods / CRUD
-  - 8) Api
-  - 9) Unit Testing / AAA metoden / Arrange, Act, Assert
+  - 5) sql / primary and foreign keys / relations / db diagram (Åben Designer på en af tablesne i Sql Object Explorer)
+  - 6) c# Models (Ef Diagram) / inheritance(Bruges i MainWindow.xaml.cs og de andre Window filer)
+  - 7) methods / CRUD 
+	- (Mangler Delete og Update, pga. mangel på mere tid til at færdiggøre)
+  - 8) Api (OpenWeatherApi): Kan vises ved at skrive en by ind i string url.
+  - 9) Unit Testing / AAA metoden / Arrange, Act, Assert. 
+	- (Forklar omkring hvad jeg havde tænkt mig at teste for: At teste man ikke kan lave en person med det samme telefonnummer)
