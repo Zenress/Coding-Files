@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Charity</title>
+    <link rel="stylesheet" href="style-red.css">
+</head>
+<body>
+    <!-- Fullwidth og height section i begyndelsen af siden -->
+    <section class="hero">
+        
+<!-- Checkbox til at toggle navigationen -->
+        <input type="checkbox" name="toggle-menu" id="toggle" aria-label="Toggle menu">
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Causes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Tekst der ligger ovenpå video -->
+        <div class="overlay">
+            <h1 >Give monthly,</h1>
+            <p class="lead">change lives all year long.</p>
+            <p>100% of your donation brings clean water to people in need.</p>
+            <form action="">
+                <fieldset>
+                    <span class="dollar">$</span>
+                    <input type="number" value="20" name="donation__amount" id="amount" aria-label="Choose amount to donate">
+                    <span class="month">USD/Month</span>
+                </fieldset>
+                <a type="button" href="#" class="button button--primary">Give monthly</a>
+                <a type="button" href="#" class="button">Donate once</a>
+            </form>
+        </div>
+
+        <!-- Video til baggrund -->
+        <video class="video" autoplay muted loop>
+            <source src="coverr-filling-waterbottle.mp4" type="video/mp4">
+        </video>
+
+        <!-- Logo -->
+        <div class="logo">
+            <svg xmlns='http://www.w3.org/2000/svg' stroke="black" width='512' height='512' viewBox='0 0 512 512'><title>Water Charity</title><path d='M400,320c0,88.37-55.63,144-144,144S112,408.37,112,320c0-94.83,103.23-222.85,134.89-259.88a12,12,0,0,1,18.23,0C296.77,97.15,400,225.17,400,320Z' style='fill:none;stroke:inherit;stroke-miterlimit:10;stroke-width:32px'/><path d='M344,328a72,72,0,0,1-72,72' style='fill:none;stroke:inherit;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
+            <span>Water Charity</span>
+        </div>
+
+        <!-- De tre linjer til hamburger menuen. Samme placering som checkbox, men bagved -->
+        <span class="hamburger-icon">
+            <svg xmlns='http://www.w3.org/2000/svg' stroke="white" width='512' height='512' viewBox='0 0 512 512'><title>Menu</title><line x1='80' y1='160' x2='432' y2='160' style='fill:none;stroke:inherit;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/><line x1='80' y1='256' x2='432' y2='256' style='fill:none;stroke:inherit;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/><line x1='80' y1='352' x2='432' y2='352' style='fill:none;stroke:inherit;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/></svg>
+        </span>
+        
+    </section>
+
+    <!-- Navigation der er full width og height-->
+    
+</body>
+</html>

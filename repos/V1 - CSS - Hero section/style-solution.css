@@ -1,0 +1,177 @@
+:root {
+
+    --primary-color: hsl(197, 73%, 63%);
+    --secondary-color: hsl(57, 96%, 58%);
+
+    --dark-blue: hsl(218, 67%, 7%);
+
+    --border-radius: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+svg {
+    height: 50px;
+    width: auto;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+}
+
+.overlay {
+    background: hsla(0, 0%, 0%, .2);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay h1,
+.overlay .lead {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.overlay p {
+    font-size: 1.2;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.overlay form {
+    background-color: hsla(0, 0%, 0%, .3);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.overlay form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.overlay form .dollar {
+    color: gray;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+}
+
+.overlay form #amount {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: .5rem;
+    padding-left: 2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--dark-blue);
+}
+
+.overlay form .month {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: gray;
+}
+
+.video {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.logo svg {
+    stroke: white;
+    fill: goldenrod;
+}
+
+#toggle {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    padding: 1rem;
+    height: 50px;
+    width: 50px;
+    /* cursor: pointer; */
+    /* opacity: 0; */
+}
+
+.hamburger-icon {
+    position: absolute;
+    right: 19px;
+    top: 20px;
+}
+
+.hamburger-icon svg {
+    height: 40px;
+    width: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+}
+
+.button--primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+nav {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+
+

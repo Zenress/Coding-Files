@@ -1,0 +1,104 @@
+body {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.parent, .parent2, .parent3, .parent4, .parent5, .parent6, .parent7, .parent8, .parent9, .parent10, .parent11, .parent12 {
+    background-color: #ccc;
+    display: flex;
+}
+
+.parent6, .parent7, .parent8, .parent10 {
+    min-height: 100px; 
+}
+
+.parent9 div{
+    min-width: 200px;
+
+}
+
+.child, .child2, .child3, .child4 {
+    background-color: red;
+    width: 100px;
+    max-height: 68px;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 42px
+}
+.child2 {
+    background-color: green;
+}
+
+.child3 {
+    background-color: blue;
+}
+
+.child4 {
+    background-color: orange;
+}
+
+.parent {
+    justify-content: flex-start;
+}
+
+.parent2 {
+    justify-content: flex-end;
+}
+
+.parent3 {
+    justify-content: center;
+}
+
+.parent4 {
+    justify-content: space-between;
+}
+
+.parent5 {
+    justify-content: space-around;
+}
+
+.parent6 {
+    align-items: flex-start;
+}
+
+.parent7 {
+    align-items: flex-end;
+}
+
+.parent8 {
+    align-items: center;
+}
+
+.parent9 {
+    flex-wrap: wrap;
+    
+}
+
+.parent10 > .child4{
+    align-self: flex-end;
+}
+
+.parent11 > .child{
+    order: 1;
+}
+.parent11 > .child4{
+    order: -1;
+}
+
+.parent12 > .child, 
+.parent12 > .child4 {
+    flex: auto;
+}
+
+h1 {
+    Font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4 {
+    Font-size: 18px;
+    font-weight: bold;
+}
+

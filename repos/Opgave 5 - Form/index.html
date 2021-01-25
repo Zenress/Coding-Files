@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <form action="https://youtu.be/dQw4w9WgXcQ"id="form">
+        <fieldset>
+            <Legend>Signup Form</Legend>
+            
+            <div>
+                <label for="First Name">First Name*</label>
+                <input id="First Name" type="text" required autofocus placeholder="Your first name here.">
+            </div>
+
+            <div>
+                <label for="Last Name">Last Name*</label>
+                <input id="Last Name" type="text" required placeholder="Your last name here.">
+            </div>
+
+            <div>
+                <label for="Country">Country*</label>
+                <input id="Country" type="text" required placeholder="Type your country here.">
+            </div>
+
+            <div>
+                <label for="Date of birth">Date of birth*</label>
+                <input id="Date of birth" type="date" min="1903-01-02" required>
+            </div>
+
+            <div>
+                <label for="sexselect">Select gender*</label>
+                <select id="sexselect" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Attack Helicopter">Attack Helicopter</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="age">Age*</label>
+                <input id="age" type="number" max="115" min="15" required placeholder="18">
+            </div>       
+
+        </fieldset>
+        <fieldset>
+            <legend>User information</legend> 
+            <div>
+                <label for="E-Mail">E-Mail*</label>
+                <input id="E-Mail" type="email" required placeholder="yourname@email.com">
+            </div>
+
+            <div>
+                <label for="Username">Username*</label>
+                <input id="Username" type="text" required minlength="4" placeholder="Your username here.">
+            </div>
+
+            <div>
+                <span>Your password must contain atleast 8 characters <br></span>
+                <label for="Password">Password*</label>
+                <input id="Password" type="password" required minlength="8" placeholder="Your password here.">
+            </div>
+            <div>
+                <label for=""></label>
+                <input type="file" required>
+            </div>
+           
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="monthly">Recieve monthly emails with new activity</label>
+                <input id="monthly" type="checkbox">
+            </div>
+            <div>
+                <label for="submit"></label>
+                <input id="submit" type="submit" value="Sign me up">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

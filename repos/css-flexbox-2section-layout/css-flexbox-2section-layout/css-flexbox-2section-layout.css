@@ -1,0 +1,19 @@
+.header {
+    height: 50px;
+    background-color: #666666;
+}
+
+.content {
+    flex-grow: 2;
+    background-color: #999999;
+}
+
+.wrapper {
+    flex-direction: column;
+    display: flex;
+    height: 100vh; 
+}
+
+body {
+    margin: 0;
+}

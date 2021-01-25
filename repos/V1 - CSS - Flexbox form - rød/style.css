@@ -1,0 +1,107 @@
+/* CSS Setup - her ikke noget at gøre med flexbox */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-image: linear-gradient(260deg, hsl(103, 98%, 20%) 0%, hsl(165, 98%, 17%) 100%);
+    z-index: -2;
+  }
+  
+  a {
+    color:white;
+  }
+  
+  .cover  {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /*Video*/
+  
+  .video {
+    height:100vh;
+    width: 100vw;
+    object-fit: cover;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    filter: blur(5px);
+  }
+  
+  /*Hack to get them to align properly */
+  .flex-form > *:not([type="date"]) {
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+  }
+  
+  .flex-form input[type="submit"] {
+    background:#FF5A5F;
+    border-top: 1px solid #FF5A5F;
+    border-bottom: 1px solid #FF5A5F;
+    color:white;
+  }
+  
+  .flex-form {
+    z-index: 10;
+    position: relative;
+    border: 20px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+  }
+  
+  .flex-form > * {
+    border:0;
+    padding:10px;
+    background:white;
+    line-height:50px;
+    font-size: 20px;
+    border-radius:0;
+    outline:0;
+    border-right:1px solid rgba(0,0,0,0.2);
+    -webkit-appearance:none;
+
+  }
+  
+  .flex-form > *:last-child {
+    border-right: 0;
+  }
+  
+  /*Start din flexbox her*/
+  
+  .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .flex-form {
+    display: flex;
+    flex-basis: 1028.8px;
+    flex-wrap: wrap;
+  }
+
+  input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+  }
+
+  input[type="search"] {
+    flex-basis: 300px;
+  }
+
+  input[type="search"],
+   input[type="date"],
+   .selector,
+   input[type="submit"],
+   label[for="from"],
+   label[for="to"] {
+    flex-grow: 100;
+  }

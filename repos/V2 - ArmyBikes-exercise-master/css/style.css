@@ -1,0 +1,57 @@
+:root {
+    --green-500: hsl(90, 62%, 25%);
+    --green-400: hsl(80, 100%, 30%);
+    --green-300: hsl(105, 100%, 40%);
+  
+    --text-color: hsl(0, 0%, 95%); 
+  
+    --bg-color: hsl(0, 0%, 14%);
+  
+    --font-family:Verdana, ui-sans-serif, sans-serif; 
+  }
+  
+ body {
+   font-family: var(--font-family);
+   background-color: var(--bg-color);
+ }
+/*Header section */
+.header {
+  
+}
+
+h1 {
+  font-size: 2rem;
+  background-color: var(--green-500);
+  text-align: center;
+}
+
+/*Navigation section */
+nav {
+  font-size: .9rem;
+  background-color: var(--green-400);
+  border-color: var(--green-300);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+
+ul li{
+  display: inline;
+  list-style: none;
+}
+/*Header section end */
+/*Product section */
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+/*Product section end */
+/*Footer section */
+footer {
+  font-size: 1rem;
+}
+
