@@ -1,12 +1,12 @@
-var fruits = ['Æble','Citron','Pære','Banan'];
-var fruitColor = ['Red','Yellow','Green','Blue']
-var select = document.querySelector('p.text');
+const fruits = ['Æble','Citron','Pære','Banan'];
+const fruitColor = ['Red','Yellow','Green','Blue']
+const select = document.querySelector('p.text');
 
 // Function that types a randomly selected item from fruits to a string
 function typeSentence()
 {
-    var randomNr = Math.floor(Math.random() * fruits.length)
-    let split = fruits[randomNr].split('');
+    const randomNr = Math.floor(Math.random() * fruits.length)
+    const split = fruits[randomNr].split('');
     for (let index = 0; index < split.length; index++) 
     {
         setTimeout(() => {select.append(split[index]);},index * 650);
@@ -34,7 +34,7 @@ function typeEffect()
 }
 
 // The setInterval function doesn't run when the page is loaded, only after the interval. 
-// Just to make it easier to but test, i made it run when the site starts as well
+// Just to make it easier to test, i made it run when the site starts as well
 typeEffect();
 
 // setInterval function that runs every 10 seconds
