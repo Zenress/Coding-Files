@@ -1,0 +1,48 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    position: sticky;
+    width: 100%;
+    height: 55px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 150px auto 200px auto 50px;
+    grid-template-rows: 55px
+}
+
+img.bringLogo
+{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+div.search
+{   
+    grid-area: 1 / 3 / 2 / 4;
+    align-self: center;
+}
+
+.search input 
+{
+    width: 150px;
+}
+
+img.menuIcon 
+{
+    grid-area: 1 / 5 / 2 / 6;
+    width: 50px;
+}
+
+section
+{
+    height: auto;
+}
+
+footer 
+{
+    background-color: blue;
+}
