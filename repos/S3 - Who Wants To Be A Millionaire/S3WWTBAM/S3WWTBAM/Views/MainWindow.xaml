@@ -1,0 +1,57 @@
+﻿<Window x:Class="S3WWTBAM.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:S3WWTBAM.Views"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="CallAFriend" Grid.Column="0" Grid.Row="0" Background="Black" Click="CallAFriend_Click" >
+            <Image Source="img/4bfxqtqm.bmp"></Image>
+        </Button>
+        <Button x:Name="AskP" Grid.Column="0" Grid.Row="1" Background="Black" Click="AskP_Click" >
+            <Image Source="img/stti59ap.bmp"></Image>
+        </Button>
+        <Button x:Name="FiftyFifty" Grid.Column="0" Grid.Row="2" Background="Black" Click="FiftyFifty_Click"  >
+            <Image Source="img/t2us88ft.bmp"></Image>
+        </Button>
+
+        <Label x:Name="lbl12" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="0" Height="35" VerticalAlignment="Top" >Spørgsmål 12</Label>
+        <Label x:Name="lbl11" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="0" Height="35" VerticalAlignment="Center" >Spørgsmål 11</Label>
+        <Label x:Name="lbl10" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="0" Height="35" VerticalAlignment="Bottom">Spørgsmål 10</Label>
+        <Label x:Name="lbl9" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="1" Height="35" VerticalAlignment="Top">Spørgsmål 9</Label>
+        <Label x:Name="lbl8" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="1" Height="35" VerticalAlignment="Center" >Spørgsmål 8</Label>
+        <Label x:Name="lbl7" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="1" Height="35" VerticalAlignment="Bottom">Spørgsmål 7</Label>
+        <Label x:Name="lbl6" Foreground="White"  Background="Black" Grid.Column="2" Grid.Row="2" Height="35" VerticalAlignment="Top" >Spørgsmål 6</Label>
+        <Label x:Name="lbl5" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="2" Height="35" VerticalAlignment="Center" >Spørgsmål 5</Label>
+        <Label x:Name="lbl4" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="2" Height="35" VerticalAlignment="Bottom" >Spørgsmål 4</Label>
+        <Label x:Name="lbl3" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="3" Height="35" VerticalAlignment="Top">Spørgsmål 3</Label>
+        <Label x:Name="lbl2" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="3" Height="35" VerticalAlignment="Center">Spørgsmål 2</Label>
+        <Label x:Name="lbl1" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="3" Height="35" VerticalAlignment="Bottom">Spørgsmål 1</Label>
+
+        <Button x:Name="AButton"  Background="DeepSkyBlue" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="52" Content="A Button" Click="AButton_Click" />
+        <Button x:Name="BButton" Background="DeepSkyBlue" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="52" Content="B Button" Click="BButton_Click"  />
+        <Button x:Name="CButton" Background="DeepSkyBlue" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="52" Content="C Button" Click="CButton_Click" />
+        <Button x:Name="DButton" Background="DeepSkyBlue" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Height="52" Content="D Button" Click="DButton_Click" />
+
+        <TextBlock x:Name="Questionbox" Grid.Column="1"  Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Text="TextBlock" Foreground="White" />
+        <Image x:Name="Img" Grid.Column="1" HorizontalAlignment="Left" Source="img/9c48bypx.bmp"  Grid.RowSpan="2"  />
+
+
+
+
+    </Grid>
+</Window>
