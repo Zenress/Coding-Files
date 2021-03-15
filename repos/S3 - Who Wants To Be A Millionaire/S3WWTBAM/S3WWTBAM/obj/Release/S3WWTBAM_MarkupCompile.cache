@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Debug\
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\
 S3WWTBAM
 none
 false
-DEBUG;TRACE
+TRACE
 J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\App.xaml
 11892971807
 
-6628457063
+51470816430
 13-1505183044
 Views\MainWindow.xaml;
 
-True
+False
 

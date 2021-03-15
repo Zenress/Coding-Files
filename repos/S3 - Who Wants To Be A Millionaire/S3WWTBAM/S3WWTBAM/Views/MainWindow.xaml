@@ -20,13 +20,13 @@
         </Grid.RowDefinitions>
 
         <Button x:Name="CallAFriend" Grid.Column="0" Grid.Row="0" Background="Black" Click="CallAFriend_Click" >
-            <Image Source="img/4bfxqtqm.bmp"></Image>
+            <Image Source="/Views/img/4bfxqtqm.bmp"/>
         </Button>
         <Button x:Name="AskP" Grid.Column="0" Grid.Row="1" Background="Black" Click="AskP_Click" >
-            <Image Source="img/stti59ap.bmp"></Image>
+            <Image Source="/Views/img/stti59ap.bmp"/>
         </Button>
         <Button x:Name="FiftyFifty" Grid.Column="0" Grid.Row="2" Background="Black" Click="FiftyFifty_Click"  >
-            <Image Source="img/t2us88ft.bmp"></Image>
+            <Image Source="/Views/img/t2us88ft.bmp" OpacityMask="Red"/>
         </Button>
 
         <Label x:Name="lbl12" Foreground="White" Background="Black" Grid.Column="2" Grid.Row="0" Height="35" VerticalAlignment="Top" >Spørgsmål 12</Label>
@@ -48,10 +48,6 @@
         <Button x:Name="DButton" Background="DeepSkyBlue" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Height="52" Content="D Button" Click="DButton_Click" />
 
         <TextBlock x:Name="Questionbox" Grid.Column="1"  Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Text="TextBlock" Foreground="White" />
-        <Image x:Name="Img" Grid.Column="1" HorizontalAlignment="Left" Source="img/9c48bypx.bmp"  Grid.RowSpan="2"  />
-
-
-
-
+        <Image x:Name="Img" Grid.Column="1" HorizontalAlignment="Left" Source="/Views/img/9c48bypx.bmp"  Grid.RowSpan="2"  />
     </Grid>
 </Window>

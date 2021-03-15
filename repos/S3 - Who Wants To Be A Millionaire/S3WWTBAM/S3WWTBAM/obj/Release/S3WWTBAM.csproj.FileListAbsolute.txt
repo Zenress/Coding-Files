@@ -1,0 +1,14 @@
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\bin\Release\S3WWTBAM.exe.config
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\bin\Release\S3WWTBAM.exe
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\bin\Release\S3WWTBAM.pdb
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\Views\MainWindow.g.cs
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\App.g.cs
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\S3WWTBAM_MarkupCompile.cache
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\S3WWTBAM_MarkupCompile.lref
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\Views\MainWindow.baml
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\S3WWTBAM.g.resources
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\S3WWTBAM.Properties.Resources.resources
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\S3WWTBAM.csproj.GenerateResource.cache
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\S3WWTBAM.csproj.CoreCompileInputs.cache
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\S3WWTBAM.exe
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Release\S3WWTBAM.pdb
