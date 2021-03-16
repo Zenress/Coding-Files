@@ -13,3 +13,11 @@ J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Mil
 J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Debug\S3WWTBAM.exe
 J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Debug\S3WWTBAM.pdb
 J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Debug\S3WWTBAM.csprojAssemblyReference.cache
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\bin\Debug\Model\Database1.mdf
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\bin\Debug\Model\Database1_log.ldf
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\bin\Debug\EntityFramework.dll
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\bin\Debug\EntityFramework.SqlServer.dll
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\bin\Debug\EntityFramework.xml
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\bin\Debug\EntityFramework.SqlServer.xml
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Debug\S3WWTBAM_Content.g.cs
+J:\Coding\Github lokalt repository\Coding-Files\repos\S3 - Who Wants To Be A Millionaire\S3WWTBAM\S3WWTBAM\obj\Debug\S3WWTBAM.csproj.CopyComplete

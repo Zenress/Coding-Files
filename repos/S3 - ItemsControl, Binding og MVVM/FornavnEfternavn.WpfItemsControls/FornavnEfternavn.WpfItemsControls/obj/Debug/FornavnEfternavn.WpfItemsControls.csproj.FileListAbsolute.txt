@@ -1,0 +1,15 @@
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\bin\Debug\FornavnEfternavn.WpfItemsControls.exe.config
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\bin\Debug\FornavnEfternavn.WpfItemsControls.exe
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\bin\Debug\FornavnEfternavn.WpfItemsControls.pdb
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\FornavnEfternavn.WpfItemsControls.csprojAssemblyReference.cache
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\MainWindow.g.cs
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\App.g.cs
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\FornavnEfternavn.WpfItemsControls_MarkupCompile.cache
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\FornavnEfternavn.WpfItemsControls_MarkupCompile.lref
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\MainWindow.baml
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\FornavnEfternavn.WpfItemsControls.g.resources
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\FornavnEfternavn.WpfItemsControls.Properties.Resources.resources
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\FornavnEfternavn.WpfItemsControls.csproj.GenerateResource.cache
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\FornavnEfternavn.WpfItemsControls.csproj.CoreCompileInputs.cache
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\FornavnEfternavn.WpfItemsControls.exe
+C:\Users\Zenress\source\repos\FornavnEfternavn.WpfItemsControls\FornavnEfternavn.WpfItemsControls\obj\Debug\FornavnEfternavn.WpfItemsControls.pdb
