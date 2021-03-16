@@ -25,12 +25,16 @@ namespace FornavnEfternavn.WpfItemsControls.Exercise1.Views
         {
             InitializeComponent();
             Person Shano = new Person("Shano","Fog","BlahBlah","202020");
-            people.Items.Add(Shano.FullName);
+            people.Items.Add(Shano);
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            Person selectedPerson = (Person)people.SelectedItem;
+            firstNameTB.Text = selectedPerson.FirstName;
+            lastNameTB.Text = selectedPerson.LastName;
+            eMailTB.Text = selectedPerson.Email;
+            tlfNrTB.Text = selectedPerson.TlfNr;
         }
     }
 }
