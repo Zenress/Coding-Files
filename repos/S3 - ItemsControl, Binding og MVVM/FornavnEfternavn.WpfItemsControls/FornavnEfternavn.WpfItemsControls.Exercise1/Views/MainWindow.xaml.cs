@@ -36,5 +36,11 @@ namespace FornavnEfternavn.WpfItemsControls.Exercise1.Views
             eMailTB.Text = selectedPerson.Email;
             tlfNrTB.Text = selectedPerson.TlfNr;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NewPerson window = new NewPerson(people);
+            window.Show();
+        }
     }
 }

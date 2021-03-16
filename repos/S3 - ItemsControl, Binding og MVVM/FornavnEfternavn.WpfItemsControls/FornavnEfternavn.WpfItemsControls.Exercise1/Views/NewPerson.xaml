@@ -1,0 +1,16 @@
+﻿<Window x:Class="FornavnEfternavn.WpfItemsControls.Exercise1.Views.NewPerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FornavnEfternavn.WpfItemsControls.Exercise1.Views"
+        mc:Ignorable="d"
+        Title="NewPerson" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="firstNameTB" HorizontalAlignment="Left" Height="23" Margin="312,120,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="lastNameTB" HorizontalAlignment="Left" Height="23" Margin="312,148,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="eMailTB" HorizontalAlignment="Left" Height="23" Margin="312,176,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tlfNrTB" HorizontalAlignment="Left" Height="23" Margin="312,204,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Create" HorizontalAlignment="Left" Margin="330,232,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+    </Grid>
+</Window>

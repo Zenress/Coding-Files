@@ -12,5 +12,6 @@
         <TextBlock x:Name="lastNameTB" HorizontalAlignment="Left" Margin="407,136,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="175" FontSize="20"/>
         <TextBlock x:Name="eMailTB" HorizontalAlignment="Left" Margin="407,179,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="175" FontSize="20"/>
         <TextBlock x:Name="tlfNrTB" HorizontalAlignment="Left" Margin="407,222,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="175" FontSize="20"/>
+        <Button Content="New Person" HorizontalAlignment="Left" Margin="228,322,0,0" VerticalAlignment="Top" Width="126" Height="33" Click="Button_Click"/>
     </Grid>
 </Window>
